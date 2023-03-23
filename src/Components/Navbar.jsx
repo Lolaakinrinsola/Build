@@ -40,9 +40,9 @@ const Navbar = () => {
                 <div className='h-screen flex flex-col h4 text-secondary-10 text:hover-primary-50 space-y-5 px-[2em] pt-[2em]'>
                     <Link to='/business'>Business</Link>
                     <Link to='/'>Company</Link>
-                    <Link to='about'>About Us</Link>
-                    <Link to='stories'>Blog</Link>
-                    <Link to='FAQs'>FAQs</Link>
+                    <Link to='/About'>About Us</Link>
+                    <Link to='/stories'>Blog</Link>
+                    <Link to='/FAQs'>FAQs</Link>
                     <div className='flex justify-between items-center '>
             <a href="#"><img src={fb} alt="line" /></a>
             <a href="#"><img src={ig} alt="facebook" /></a>

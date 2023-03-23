@@ -272,7 +272,7 @@ const BusinessHome = () => {
           <p className="p2 text-white-10">
             Send us a whatsapp message, or chat with us on the app. You can also
             reach us at{" "}
-            <a href="" className="text-secondary-10">
+            <a href="mailTo:info@build.com" className="text-secondary-10">
               info @build.com,
             </a>
             get instant feedback however you want
