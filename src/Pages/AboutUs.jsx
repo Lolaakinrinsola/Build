@@ -145,10 +145,10 @@ const AboutUs = () => {
                 <div className='md:w-1/2 space-y-5'>
                     <h1 className='h2 text-secondary-10'>We are always here for you </h1>
                     <p className='p2 text-white-10'>
-                    Send us a whatsapp message, or chat with us on the app. You can also reach us at <a href="" className='text-secondary-10'>info @build.com,</a>  
+                    Send us a whatsapp message, or chat with us on the app. You can also reach us at <a href="mailTo:info@build.com" className='text-secondary-10'>info @build.com,</a>  
                     get instant feedback however you want
                     </p>
-                    <Link className='flex items-center space-x-3'>Contact Us <IoIosArrowDropright/> </Link>                   
+                    <Link to='/contact' className='flex items-center space-x-3'>Contact Us <IoIosArrowDropright/> </Link>                   
                 </div>
                 <div>
                     <img src={manSinging} alt="" />
