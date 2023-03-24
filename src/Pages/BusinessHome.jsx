@@ -2,8 +2,9 @@ import React from "react";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router-dom";
-import license from "../Assets/Images/small.png";
+import license from "../Assets/Images/Blurred.png";
 import Button from "../Components/Button";
+import bg from "../Assets/Images/BG-4.png";
 import "../Assets/styles/global.css";
 import store from "../Assets/Images/store-front2.png";
 import { AiFillApple } from "react-icons/ai";
@@ -16,8 +17,10 @@ import inage1 from "../Assets/Images/Inage1.png";
 import girlHoldingPhone from "../Assets/Images/girl2.png";
 import inage2 from "../Assets/Images/Inage2.png";
 import womansmile from "../Assets/Images/womansmile.png";
+import logo from "../Assets/Images/Logo-2.png";
 import womansmile2 from "../Assets/Images/womansmile2.png";
 import manSinging from "../Assets/Images/manSinging.png";
+import Typed from "react-typed";
 import { IoIosArrowDropright } from "react-icons/io";
 
 const BusinessHome = () => {
@@ -45,26 +48,33 @@ const BusinessHome = () => {
   ];
   return (
     <div className="font-sans">
-      <Navbar />
-
-      <header
-        className="md:mt-[5em] mx-[2em] lg:mx-[10em] businessBackground "
-        
+      <div
+        className="h-screen"
+        style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
-        <div className="flex flex-col lg:h-screen justify-top m-auto items-center space-y-5">
-          <h1 className="h1 text-secondary-10 text-center">
-            Managing your business made easy   
-          </h1>
-          <p className="p1 text-secondary-10 text-center md:w-[60%] lg:w-[40%] ">
-            Build is a modern digital bank which makes use of technology to
-            provide access to tools that support small/ medium scale businesses
-            and individuals.
-          </p>
-          <Button text="Get Started" />
-          <img src={store} alt="" className="lg:hidden" />
-          <img src={license} alt="" className="m-auto"/>
+        <Navbar className="text-white-10" logo={logo} />
+        <header className=" flex flex-col justify-center  mt-[9em] md:space-y-5 text-white-10 px-[2em] max-w-[80em] lg:px-[5em] m-auto">
+          <div className="flex flex-col gap-[5em] ">
+            <div className="grid gap-[1em] ">
+              <h1 className="h1 text-left border-5 ">
+                Managing your business <br /> made easy   
+              </h1>
+              <p className="p1 bg-gradient-to-r from-gradient-10 to-gradient-20 py-4 md:w-[75%] lg:w-[50%] px-3 rounded-xl bg-blur">
+                Build is a modern digital bank which makes use of technology to
+                provide access to tools that support small/ medium scale
+                businesses and individuals.
+              </p>
+              <div></div>
+            </div>
+            <div>
+              <Button text="Get Started" />
+            </div>
+          </div>
+        </header>
+        <div className="absolute bottom-[-4%] lg:bottom-[-7%] w-1/2 right-[25%] justify-center m-auto">
+          <img src={license} alt="" className="m-auto" />
         </div>
-      </header>
+      </div>
 
       <div className="bg-white-10 height-fit-content space-y-10 grid m-auto max-w-[80em] justify-center items-center px-[2em] ">
         <p className="text-center h3 text-white-30">
@@ -88,10 +98,8 @@ const BusinessHome = () => {
           >
             <TbBrandGooglePlay color="white" size="2em" />
             <p className="text-white-10">
-              <span className="opacity-70">
-              Get on the
-              </span>
-               <br /> <span className="text-white-10">App Store</span>{" "}
+              <span className="opacity-70">Get on the</span>
+              <br /> <span className="text-white-10">App Store</span>{" "}
             </p>
           </a>
         </div>
@@ -103,7 +111,6 @@ const BusinessHome = () => {
         </h1>
         <div className="m-auto gap-[10em]">
           <div className="space-y-[10em]  grid md:grid-cols-2 justify-center items-center">
-            
             {tools.map((tool) => (
               <CardFlavor
                 coverImg={tool.image}
@@ -112,15 +119,14 @@ const BusinessHome = () => {
               />
             ))}
           </div>
-
         </div>
       </div>
 
-      <div className="bg-secondary-20 max-w-[80em] m-auto rounded-[3em]" style={{ backgroundImage: `url(${bgFrame})`, backgroundSize: "cover" }}>
-        <body
-          className="flex flex-col md:flex-row px-[2em] lg:px-[5em] md:h-fit-content py-[3em]  mx-[2em] lg:mx-[5em] my-[2em] justify-between items-center  mt-[5em] "
-          
-        >
+      <div
+        className="bg-secondary-20 max-w-[80em] m-auto rounded-[3em]"
+        style={{ backgroundImage: `url(${bgFrame})`, backgroundSize: "cover" }}
+      >
+        <body className="flex flex-col md:flex-row px-[2em] lg:px-[5em] md:h-fit-content py-[3em]  mx-[2em] lg:mx-[5em] my-[2em] justify-between items-center  mt-[5em] ">
           <div>
             <img src={girl2} alt="" />
           </div>
@@ -133,7 +139,6 @@ const BusinessHome = () => {
             </p>
           </div>
         </body>
-
       </div>
 
       <body className="flex flex-col-reverse md:flex-row px-[2em]  justify-between my-[5em] items-center bg-white-10 m-auto max-w-[80em] ">
@@ -156,14 +161,14 @@ const BusinessHome = () => {
       <body className="flex flex-col-reverse md:flex-row-reverse px-[2em]  gap-[2em]  justify-between items-center my-[5em] bg-white-10 m-auto max-w-[80em]">
         <div className="md:w-1/2 space-y-5">
           <h1 className="h2 text-secondary-10">
-          Comprehensive Real- <br /> time reports
+            Comprehensive Real- <br /> time reports
           </h1>
           <p className="p2 text-white-30">
-          Forget about weekly updates or monthly reports, get the information you need when you need it with comprehensive reports that are automatically updated round-the-clock.
+            Forget about weekly updates or monthly reports, get the information
+            you need when you need it with comprehensive reports that are
+            automatically updated round-the-clock.
           </p>
-          <p className="h3 text-white-30">
-          360 degrees view of your business
-          </p>
+          <p className="h3 text-white-30">360 degrees view of your business</p>
         </div>
         <div>
           <img src={inage1} alt="" />
@@ -173,10 +178,11 @@ const BusinessHome = () => {
       <body className="flex flex-col-reverse md:flex-row px-[2em]  gap-[2em] my-[5em] justify-between items-center bg-white-10 m-auto max-w-[80em]">
         <div className="md:w-1/2 space-y-5">
           <h1 className="h2 text-secondary-10">
-          Seamless Dispute <br /> Resolutions
+            Seamless Dispute <br /> Resolutions
           </h1>
           <p className="p2 text-white-30">
-          With Build, you don’t get to worry about chargeback hassles. Sit back and watch disputes resolved in perfect time.
+            With Build, you don’t get to worry about chargeback hassles. Sit
+            back and watch disputes resolved in perfect time.
           </p>
         </div>
         <div>
@@ -193,8 +199,8 @@ const BusinessHome = () => {
             <h1 className="h2 text-secondary-20">Get Settled Instantly!</h1>
             <ul className="p2 text-white-10">
               <li className="list-disc">
-                No need waiting for a lifetime to receive money into your account
-                as all transactions are settled instantly
+                No need waiting for a lifetime to receive money into your
+                account as all transactions are settled instantly
               </li>
               <li className="list-disc">
                 No more seeing POS alerts and settlement next day.{" "}
@@ -208,7 +214,6 @@ const BusinessHome = () => {
             </div>
           </div>
         </body>
-
       </div>
 
       <body className="flex flex-col-reverse md:flex-row px-[2em]  my-[5em] justify-between items-center bg-white-10 m-auto max-w-[80em] ">
@@ -282,23 +287,24 @@ const BusinessHome = () => {
       >
         <div className="max-w-[80em] m-auto flex flex-col-reverse md:flex-row justify-between">
           <div className="md:w-1/2 space-y-5 pb-[3em] ">
-            <h1 className="h2 text-secondary-10">We are always here for you </h1>
+            <h1 className="h2 text-secondary-10">
+              We are always here for you{" "}
+            </h1>
             <p className="p2 text-white-10">
-              Send us a whatsapp message, or chat with us on the app. You can also
-              reach us at{" "}
+              Send us a whatsapp message, or chat with us on the app. You can
+              also reach us at{" "}
               <a href="mailTo:help@ttmfb.com" className="text-secondary-10">
                 help@ttmfb.com,
               </a>
               get instant feedback however you want
             </p>
-            <Link to='/contact' className="flex items-center space-x-3">
+            <Link to="/contact" className="flex items-center space-x-3">
               Contact Us <IoIosArrowDropright />{" "}
             </Link>
           </div>
           <div className="justify-end items-end grid">
             <img src={manSinging} alt="" />
           </div>
-
         </div>
       </body>
 

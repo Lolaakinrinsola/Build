@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
+import logo from '../Assets/Images/Logo.png'
 import '../Assets/styles/global.css'
 import Footer from '../Components/Footer'
 import blog from '../Assets/Images/Rectangle.png'
@@ -9,7 +10,7 @@ import pic from '../Assets/Images/Ellipse-3.png'
 const Blog = () => {
   return (
     <div>
-        <Navbar/>
+        <Navbar logo={logo}/>
         <div className='max-w-[90em] m-auto grid justify-left '>
             <header className='mx-[2em] md:mx-[10em] lg:mx-[20em] mt-[5em] '>
                 <h1 className='h1 text-secondary-10 md:w-full'>A smart way to deal with your business clients</h1>

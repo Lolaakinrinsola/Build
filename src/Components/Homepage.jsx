@@ -21,9 +21,10 @@ import Navbar from "./Navbar";
 import { AiFillApple } from "react-icons/ai";
 import { TbBrandGooglePlay } from "react-icons/tb";
 import { IoIosArrowDropright } from "react-icons/io";
-import bg from "../Assets/Images/BG.png";
+import bg from "../Assets/Images/BG-2.png";
 import "../Assets/styles/global.css";
-import license from "../Assets/Images/small.png";
+import license from "../Assets/Images/Blurred.png";
+import logo from "../Assets/Images/Logo-2.png";
 import front from "../Assets/Images/building1.png";
 import back from "../Assets/Images/building2.png";
 import store from "../Assets/Images/store-front.png";
@@ -73,43 +74,47 @@ const Homepage = () => {
   return (
     <div className="bg-white-40">
       <div
-        className="md:h-screen + 20px"
+        className="h-screen"
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
-        <Navbar />
-        <header className=" flex flex-col justify-center m-auto items-center md:mt-[7em] md:space-y-5 ">
-          <h1 className="h1 text-secondary-10 text-center w-[80%]">
-            Do more than just banking, <br />
-            <Typed
-              className="text-primary-100"
-              strings={[
-                " Sustainable Finance",
-                " Sustainable business",
-                " Savings Culture",
-              ]}
-              typeSpeed={40}
-              backSpeed={50}
-              loop
-            ></Typed>
-          </h1>
-          <p className="p1 text-secondary-10 text-center md:w-[40%] px-[2em] md:px-0">
-            End-to-end payments and financial management in a single solution.
-            Meet the right platform to help realize your dreams.
-          </p>
-          <img src={license} alt="" />
+        <Navbar className='text-white-10' logo={logo}/>
+        <header className=" flex flex-col justify-center  mt-[9em] md:space-y-5 text-white-10 px-[2em] max-w-[80em] lg:px-[5em] m-auto">
+          <div className="flex flex-col gap-[5em] ">
+          <div className="grid gap-[1em] ">
+
+            <h1 className="h1 text-left border-5 min-h-[7.5em] md:min-h-0">
+              Do more than just banking, <br />
+              Build a {' '}
+              <Typed
+                className="text-primary-100"
+                strings={[
+                  " sustainable Finance",
+                  " sustainable Business",
+                  " savings Culture",
+                ]}
+                typeSpeed={30}
+                backSpeed={50}
+                loop
+              ></Typed>
+            </h1>
+            <p className="p1 bg-gradient-to-r from-gradient-10 to-gradient-20 py-4 md:w-[75%] lg:w-[50%] px-3 rounded-xl bg-blur">
+              End-to-end payments and financial management in a single solution. <br/>
+              Meet the right platform to help realize your dreams.
+            </p>
+            <div>
+          </div>
+
+          </div>
+          <div>
           <Button text="Get Started" />
 
-          <div className="relative  lg:absolute bottom-[-1%] ">
-            <div className="flex justify-end ">
-              <div className="height-[20%] grid items-end  ">
-                <img src={back} alt="" className="height-[20%]" />
-              </div>
-              <div className="height-[20%] grid items-end  ">
-                <img src={front} alt="" className="height-[20%]" />
-              </div>
-            </div>
+          </div>
           </div>
         </header>
+                <div className="absolute bottom-[-4%] lg:bottom-[-7%] w-1/2 right-[25%] justify-center m-auto">
+                  <img src={license} alt="" className="m-auto" />
+
+                </div>
       </div>
 
       <div className="flex flex-col-reverse md:flex-row max-w-[80em] m-auto px-[2em] lg:px-[5em] lg:h-screen mt-[2em] md:mt-0 justify-between items-center bg-white-40">

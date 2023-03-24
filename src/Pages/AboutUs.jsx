@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
-import bg from "../Assets/Images/BGabout.png";
+import bg from "../Assets/Images/BG-5.png";
 import mission from "../Assets/Images/mission.png";
 import vision from "../Assets/Images/vision.png";
 import values from "../Assets/Images/values.png";
@@ -13,6 +13,7 @@ import bgFrame from "../Assets/Images/Frame.png";
 import bgFrame2 from "../Assets/Images/BG-CTA(1).png";
 import Button from "../Components/Button";
 import Footer from "../Components/Footer";
+import logo from "../Assets/Images/Logo-2.png";
 import manSinging from "../Assets/Images/manSinging.png";
 import { AiFillApple } from "react-icons/ai";
 import { TbBrandGooglePlay } from "react-icons/tb";
@@ -22,20 +23,25 @@ const AboutUs = () => {
   return (
     <div>
       <div
-        className="lg:h-screen"
+        className="h-screen"
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
-        <Navbar />
-        <header className="grid justify-center space-y-5 mt-[5em]">
-          <h1 className="h1 text-secondary-10 text-center"> About Us</h1>
-          <div className="w-[60%] m-auto">
-            <p className="p2 text-secondary-10 text-center">
-              We are a modern digital bank leveraging technology to provide
-              access to tools to support small and medium-scale businesses and
-              individuals
-            </p>
+        <Navbar className="text-white-10" logo={logo} />
+        <header className=" flex flex-col justify-center  mt-[9em] md:space-y-5 text-white-10 px-[2em] max-w-[80em] lg:px-[5em] m-auto">
+          <div className="flex flex-col gap-[5em] ">
+            <div className="grid gap-[1em] ">
+              <h1 className="h1 text-left border-5">
+              About Us
+              </h1>
+              <p className="p1 bg-gradient-to-r from-gradient-10 to-gradient-20 py-4 md:w-[75%] lg:w-[50%] px-3 rounded-xl bg-blur">
+              We are a modern digital bank leveraging technology to provide access to tools to support small and medium-scale businesses and individuals
+              </p>
+              <div></div>
+            </div>
+            <div>
+              <Button text="Get Started" />
+            </div>
           </div>
-          <img src={store} alt="" className="m-auto" />
         </header>
       </div>
 

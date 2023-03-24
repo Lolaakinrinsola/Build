@@ -10,6 +10,7 @@ import icon5 from '../Assets/Images/Icon-5.png'
 import icon6 from '../Assets/Images/Icon-6.png'
 import icon7 from '../Assets/Images/Icon-7.png'
 import bg from '../Assets/Images/Rectangle89.png'
+import logo from '../Assets/Images/Logo.png'
 import Footer from '../Components/Footer';
 import bgFrame2 from '../Assets/Images/BG-CTA(1).png'
 
@@ -17,7 +18,7 @@ import bgFrame2 from '../Assets/Images/BG-CTA(1).png'
 const Contact = () => {
   return (
     <div >
-        <Navbar/>
+        <Navbar logo={logo}/>
 
         <div className='m-auto max-w-[80em] '>
             <header className=' items-center flex flex-col md:flex-row mx-[2em] lg:mx-[5em] md:mx-[10em] lg:space-x-[10em] mt-[5em] '>

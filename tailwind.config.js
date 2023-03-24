@@ -11,7 +11,7 @@ module.exports = withMT({
         10: 'rgba(229, 242, 254, 1)',
         50 : '#007AF4',
         100:'#FECA03',
-        200:'#00CEFC'
+        200:'#00CEFC',
       },
       'white':{
         10: '#FFFFFF',
@@ -23,6 +23,10 @@ module.exports = withMT({
       'secondary':{
         10:'#130F49',
         20:'rgba(125, 124, 255, 1)'
+      },
+      'gradient':{
+        10:'rgba(255, 255, 255, 0.04)',
+        20:'rgba(255, 255, 255, 0.098)'
       }
     },
     extend: {},

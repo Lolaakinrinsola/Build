@@ -10,6 +10,7 @@ import Button from '../Components/Button';
 import bgFrame from '../Assets/Images/Frame.png'
 import bgFrame2 from '../Assets/Images/BG-CTA(1).png'
 import manSinging from '../Assets/Images/manSinging.png'
+import logo from '../Assets/Images/Logo.png'
 import { AiFillApple } from "react-icons/ai";
 import { TbBrandGooglePlay } from "react-icons/tb";
 import { IoIosArrowDropright } from "react-icons/io";
@@ -41,7 +42,7 @@ const FAQs = () => {
 
   return (
     <div>
-        <Navbar/>
+        <Navbar logo={logo} />
         <div className='space-y-10 mt-[5em] '>
             <h1 className='h2 text-center text-secondary-10'>Frequently asked questions</h1>
             <div className='w-[50%]  md:w-[30%] grid justify-center m-auto'>

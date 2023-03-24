@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import store from '../Assets/Images/Storeimage.png'
+import logo from '../Assets/Images/Logo.png'
 import Navbar from '../Components/Navbar'
 import '../Assets/styles/global.css'
 import { CiSearch } from "react-icons/ci";
@@ -13,7 +14,7 @@ const Stories = () => {
     const words=['All','Money','Tech','People']
   return (
     <div>
-        <Navbar/>
+        <Navbar logo={logo} />
         <div className='space-y-10 mt-[5em] '>
             <h1 className='h2 text-center text-secondary-10'>Our Stories</h1>
             <div className='w-[50%]  md:w-[30%] grid justify-center m-auto'>
