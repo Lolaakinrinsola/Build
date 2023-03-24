@@ -23,64 +23,73 @@ const Stories = () => {
             </div>
         </div>
 
-        <div className='mx-[2em] md:mx-[10em] grid grid-cols-2 md:flex mt-[5em] gap-[2em] justify-center'>
-            {words.map((word,i)=>{
-                return (<div className='rounded-2xl flex bg-primary-10 text-center text-primary-50 items-center justify-center p-[3em] w-full md:w-1/4'>
-                    <p key={i}>{word}</p>
-                </div>
-                )
-            })}
+        <div className='max-w-[80em] m-auto'>
+            <div className='mx-[2em] md:mx-[10em] grid grid-cols-2 md:flex mt-[5em] gap-[2em] justify-center  '>
+                {words.map((word,i)=>{
+                    return (<div className='rounded-2xl flex bg-primary-10 text-center text-primary-50 items-center justify-center p-[3em] w-full md:w-1/4'>
+                        <p key={i}>{word}</p>
+                    </div>
+                    )
+                })}
+            </div>
+
         </div>
 
-        <div className='mx-[2em] lg:mx-[10em] mt-[5em]'>
-            <p className='h3 text-white-30'>Recent Stories</p>
+        <div className='m-auto max-w-[80em] '>
+            <div className='mx-[2em] lg:mx-[10em] mt-[5em] '>
+                <p className='h3 text-white-30'>Recent Stories</p>
 
-            <Link to='/blog'>
-                <img src={blogPic} alt="" />
-            </Link>
+                <Link to='/blog'>
+                    <img src={blogPic} alt="" />
+                </Link>
+            </div>
+
         </div>
 
-        <div className='m-[2em] lg:m-[10em] mt-[5em]  '>
-            <p className='h3 text-white-30 text-center md:text-left'>Our Stories</p>
+        <div className='max-w-[80em] m-auto '>
+            <div className='m-[2em] lg:m-[10em] mt-[5em]  '>
+                <p className='h3 text-white-30 text-center md:text-left'>Our Stories</p>
 
-            <div className='flex flex-col justify-center items-center md:flex-row justify-center gap-[2em] md:justify-between space-y-[2em] md:space-y-0 ' >
-                <div className=' md:w-1/3 rounded-2xl space-y-2 max-w-[300px] '>
-                    <img src={blog} alt="" />
-                    <div className='flex space-x-2 p4'>
-                        <p className='text-primary-50'>Business</p>
-                        <p className='text-white-30'>Client-Experience</p>
-                    </div>
-                    <p className='p2 text-secondary-10'>A smart way to deal with your business clients</p>
-                    <p className='p3'>
-                    There are times when our work impacts us deeply — sometimes in ways we neither acknowledge nor understand...
-                    </p>
-                    <p className='p4 text-white-30'>September 13, 2022</p>
-                </div> 
-                <div className=' md:w-1/3 rounded-2xl space-y-2 max-w-[300px] '>
-                    <img src={blog} alt="" />
-                    <div className='flex space-x-2 p4'>
-                        <p className='text-primary-50'>Business</p>
-                        <p className='text-white-30'>Client-Experience</p>
-                    </div>
-                    <p className='p2 text-secondary-10'>A smart way to deal with your business clients</p>
-                    <p className='p3'>
-                    There are times when our work impacts us deeply — sometimes in ways we neither acknowledge nor understand...
-                    </p>
-                    <p className='p4 text-white-30'>September 13, 2022</p>
-                </div> 
-                <div className=' md:w-1/3 rounded-2xl space-y-2 max-w-[300px] '>
-                    <img src={blog} alt="" />
-                    <div className='flex space-x-2 p4'>
-                        <p className='text-primary-50'>Business</p>
-                        <p className='text-white-30'>Client-Experience</p>
-                    </div>
-                    <p className='p2 text-secondary-10'>A smart way to deal with your business clients</p>
-                    <p className='p3'>
-                    There are times when our work impacts us deeply — sometimes in ways we neither acknowledge nor understand...
-                    </p>
-                    <p className='p4 text-white-30'>September 13, 2022</p>
-                </div>    
-            </div>         
+                <div className='flex flex-col justify-center items-center md:flex-row justify-center gap-[2em] md:justify-between space-y-[2em] md:space-y-0 ' >
+                    <div className=' md:w-1/3 rounded-2xl space-y-2 max-w-[300px] '>
+                        <img src={blog} alt="" />
+                        <div className='flex space-x-2 p4'>
+                            <p className='text-primary-50'>Business</p>
+                            <p className='text-white-30'>Client-Experience</p>
+                        </div>
+                        <p className='p2 text-secondary-10'>A smart way to deal with your business clients</p>
+                        <p className='p3'>
+                        There are times when our work impacts us deeply — sometimes in ways we neither acknowledge nor understand...
+                        </p>
+                        <p className='p4 text-white-30'>September 13, 2022</p>
+                    </div> 
+                    <div className=' md:w-1/3 rounded-2xl space-y-2 max-w-[300px] '>
+                        <img src={blog} alt="" />
+                        <div className='flex space-x-2 p4'>
+                            <p className='text-primary-50'>Business</p>
+                            <p className='text-white-30'>Client-Experience</p>
+                        </div>
+                        <p className='p2 text-secondary-10'>A smart way to deal with your business clients</p>
+                        <p className='p3'>
+                        There are times when our work impacts us deeply — sometimes in ways we neither acknowledge nor understand...
+                        </p>
+                        <p className='p4 text-white-30'>September 13, 2022</p>
+                    </div> 
+                    <div className=' md:w-1/3 rounded-2xl space-y-2 max-w-[300px] '>
+                        <img src={blog} alt="" />
+                        <div className='flex space-x-2 p4'>
+                            <p className='text-primary-50'>Business</p>
+                            <p className='text-white-30'>Client-Experience</p>
+                        </div>
+                        <p className='p2 text-secondary-10'>A smart way to deal with your business clients</p>
+                        <p className='p3'>
+                        There are times when our work impacts us deeply — sometimes in ways we neither acknowledge nor understand...
+                        </p>
+                        <p className='p4 text-white-30'>September 13, 2022</p>
+                    </div>    
+                </div>         
+            </div>
+
         </div>
 
         <Footer/>

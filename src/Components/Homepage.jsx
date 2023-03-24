@@ -38,6 +38,9 @@ import front2 from "../Assets/Images/building3.png";
 import back2 from "../Assets/Images/building4.png";
 import manSinging from "../Assets/Images/manSinging.png";
 import bgFrame from "../Assets/Images/Frame.png";
+import search from "../Assets/Images/Search.png";
+import fire from "../Assets/Images/fire.png";
+import rocket from "../Assets/Images/Rocket.png";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
@@ -109,7 +112,7 @@ const Homepage = () => {
         </header>
       </div>
 
-      <div className="flex flex-col-reverse md:flex-row px-[2em] lg:px-[5em] lg:h-screen mt-[2em] md:mt-0 justify-between items-center bg-white-40">
+      <div className="flex flex-col-reverse md:flex-row max-w-[80em] m-auto px-[2em] lg:px-[5em] lg:h-screen mt-[2em] md:mt-0 justify-between items-center bg-white-40">
         <div className="lg:w-1/2 md:w-2/3 space-y-5">
           <p className="p3 text-white-30 mt-[2em] mt-0">about build bank</p>
           <h1 className="h2 text-secondary-10">
@@ -120,18 +123,27 @@ const Homepage = () => {
             businesses and that’s exactly what happens when you use Build for
             your business
           </p>
-          <div className="space-y-2">
-            <p className="p2 text-white-30">Make smarter business decisions</p>
-            <p className="p2 text-white-30">
-              Keep track of your business financials
-            </p>
-            <p className="p2 text-white-30">
-              {" "}
-              Increase business profit and revenue
-            </p>
+          <div className="space-y-2 p2 text-white-30 ">
+            <div className="flex gap-1">
+              <div className="">
+                <img src={fire} alt="" />
+              </div>
+              <p>Make smarter business decisions</p>
+            </div>
+            <div className="flex gap-1">
+              <div className="">
+                <img src={search} alt="" />
+              </div>
+              <p>Keep track of your business financials</p>
+            </div><div className="flex gap-1">
+              <div className="">
+                <img src={rocket} alt="" />
+              </div>
+              <p>Increase business profit and revenue</p>
+            </div>
           </div>
 
-          <Link to="/About" className="text-primary-50">
+          <Link to="/About" className="text-primary-50 mt-[1em]">
             more about us...
           </Link>
         </div>
@@ -140,7 +152,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="bg-white-40 height-fit-content py-[5em] space-y-10 grid justify-center items-center px-[2em] lg:px-[20em]">
+      <div className="bg-white-40 height-fit-content max-w-[60em] m-auto py-[5em] space-y-10 grid justify-center items-center px-[2em] ">
         <div className="grid justify-end">
           <img src={buldingBlock} alt="" />
         </div>
@@ -156,9 +168,9 @@ const Homepage = () => {
 
       <div className="bg-primary-10 px-[2em] lg:px-[10em] py-[2em] md:h-screen">
         <h1 className="text-center h2 text-secondary-10">Find your Flavor</h1>
-        <div className="grid md:grid-cols-3 justify-center space-y-5 md:space-y-0 gap-5 mt-[2em]  ">
+        <div className="flex flex-wrap  justify-center space-y-5 md:space-y-0 gap-5 mt-[2em] max-w-[80em] m-auto ">
           {flavor.map((flavors) => (
-            <div className="bg-white-10 rounded-[2em] grid justify-space-around  h-[264px] ">
+            <div className="bg-white-10 rounded-[2em] grid justify-space-around md:w-1/3 w-full h-[264px] max-w-[17em] ">
               <div className="grid justify-center items-center ">
                 <img src={flavors.image} alt="" />
               </div>
@@ -172,7 +184,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <body className="flex flex-col-reverse md:flex-row px-[2em] lg:px-[10em] md:h-screen justify-between items-center bg-white-40">
+      <body className="flex flex-col-reverse md:flex-row px-[2em] lg:px-[10em] md:h-screen justify-between items-center bg-white-40 max-w-[80em] m-auto  ">
         <div className="md:w-1/2 space-y-5">
           <p className="p3 text-white-30">Savings</p>
           <h1 className="h2 text-secondary-10">Build a savings culture</h1>
@@ -189,22 +201,24 @@ const Homepage = () => {
         </div>
       </body>
 
-      <body className="flex flex-col md:flex-row px-5 lg:px-[5em] md:h-fit-content py-[5em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] md:my-0 justify-between items-center gap-[2em] bg-primary-200">
-        <div>
-          <img src={girl2} alt="" />
-        </div>
-        <div className="md:w-2/3 lg:w-1/2  space-y-5 grid items-top">
-          <h1 className="h2 text-secondary-10">
-            We help businesses and individuals reach their full potential
-          </h1>
-          <p className="p2 text-white-10">
-            Access all the simple and advanced tools to grow your business as
-            well improve your personal finances
-          </p>
-        </div>
-      </body>
+      <div className="max-w-[80em] m-auto ">
+        <body className="flex flex-col md:flex-row px-5 lg:px-[5em] md:h-fit-content py-[5em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] md:my-0 justify-between items-center gap-[2em] bg-primary-200 ">
+          <div>
+            <img src={girl2} alt="" />
+          </div>
+          <div className="md:w-2/3 lg:w-1/2  space-y-5 grid items-top">
+            <h1 className="h2 text-secondary-10">
+              We help businesses and individuals reach their full potential
+            </h1>
+            <p className="p2 text-white-10">
+              Access all the simple and advanced tools to grow your business as
+              well improve your personal finances
+            </p>
+          </div>
+        </body>
+      </div>
 
-      <body className="flex flex-col-reverse md:flex-row px-[2em] lg:px-[10em] md:h-screen justify-between items-center bg-white-40 ">
+      <body className="flex flex-col-reverse md:flex-row px-[2em] max-w-[80em] m-auto md:h-screen justify-between items-center bg-white-40 ">
         <div className="md:w-4/5 lg:w-1/2 justify-center space-y-5 grid items-center">
           <p className="p3 text-white-30">Payments</p>
           <h1 className="h2 text-secondary-10">
@@ -217,14 +231,12 @@ const Homepage = () => {
             and data, cable, utility & transport bills.
           </p>
         </div>
-        <div >
+        <div>
           <img src={message} alt="" />
         </div>
       </body>
 
-      <div
-        className=" flex flex-col px-[2em] top-0  mt-[3em] md:mt-0 space-y-0 lg:h-screen noBackground"
-      >
+      <div className=" flex flex-col px-[2em] top-0  mt-[3em] md:mt-0 space-y-0 lg:h-screen noBackground max-w-[80em] m-auto ">
         <p className="text-center p1 text-secondary-10 ">A Futuristic Bank</p>
         <div className="grid justify-center items-center m-auto  md:w-[60%] ">
           <h2 className="text-center h3 text-white-30 grid justify-center">
@@ -235,10 +247,10 @@ const Homepage = () => {
         <a href="#" className="text-center p1 text-primary-200 mb-0">
           Get Started!
         </a>
-        <img src={spacebg} alt=""  className="lg:hidden"/>
+        <img src={spacebg} alt="" className="lg:hidden" />
       </div>
 
-      <body className="flex flex-col-reverse md:flex-row-reverse px-[2em] md:h-screen justify-between items-center bg-white-40 gap-[2em] ">
+      <body className="flex flex-col-reverse md:flex-row-reverse px-[2em] md:h-screen justify-between items-center bg-white-40 gap-[2em] max-w-[80em] m-auto ">
         <div className="md:w-1/2 space-y-5">
           <h1 className="h2 text-secondary-10">Choose us for your business</h1>
           <p className="p2 text-white-30">
@@ -253,25 +265,27 @@ const Homepage = () => {
         </div>
       </body>
 
-      <body className="flex flex-col md:h-fit-content space-y-[5em] lg:p-[6em] rounded-[3em] mx-[2em] p-[2em] md:mx-[5em] my-[2em] md:my-0 justify-between items-center bg-secondary-10">
-        <div className="md:w-[60%] flex flex-col justify-center items-center m-auto">
-          <h1 className="h2 text-center text-white-10">
-            A Bank after your own heart, Build bank
-          </h1>
-        </div>
-        <div className=" grid justify-center">
-          <Button text="Get Started" />
-        </div>
-      </body>
+      <div className="max-w-[80em] m-auto">
+        <body className="flex flex-col md:h-fit-content space-y-[5em] lg:p-[6em] rounded-[3em] mx-[2em] p-[2em] md:mx-[5em] my-[2em] md:my-0 justify-between items-center bg-secondary-10">
+          <div className="md:w-[60%] flex flex-col justify-center items-center m-auto">
+            <h1 className="h2 text-center text-white-10">
+              A Bank after your own heart, Build bank
+            </h1>
+          </div>
+          <div className=" grid justify-center">
+            <Button text="Get Started" />
+          </div>
+        </body>
+      </div>
 
-      <div className="bg-primary-10 py-[7em] w-screen space-y-5 mt-[7em] ">
+      <div className="bg-primary-10 py-[7em] w-screen space-y-5 mt-[7em]  ">
         <p className="p1 text-white-30 text-center">
           Download Build mobile app
         </p>
         <div className="flex space-x-7 justify-center">
           <a
             href="#"
-            className="border border-secondary-10 flex rounded-lg p-3 items-center w-[160px] space-x-2"
+            className="border-[.1em] border-secondary-10 flex rounded-[.5em] p-3 items-center w-[160px] space-x-2"
           >
             <AiFillApple size="2em" />
             <p className="text-white-30">
@@ -281,36 +295,43 @@ const Homepage = () => {
           </a>
           <a
             href="#"
-            className="border border-primary-50 bg-primary-50 flex rounded-lg p-3 items-center w-[160px] space-x-2"
+            className="border border-primary-50 bg-primary-50 flex rounded-[.5em] p-3 items-center w-[160px] space-x-2"
           >
             <TbBrandGooglePlay color="white" size="2em" />
-            <p className="text-white-30">
-              Get on the <br /> <span className="text-white-10">App Store</span>{" "}
+            <p className="text-white-10 ">
+              <span className="opacity-75">
+                Get on the <br />
+              </span>
+              App Store
             </p>
           </a>
         </div>
       </div>
 
       <body
-        className="flex flex-col-reverse bg-secondary-20 md:flex-row px-[2em] lg:px-[5em] py-[3em] justify-between w-screen items-center "
+        className=" bg-secondary-20  px-[2em] lg:px-[10em] py-[3em] md:pb-0 w-screen  "
         style={{ backgroundImage: `url(${bgFrame})`, backgroundSize: "cover" }}
       >
-        <div className="md:w-1/2 space-y-5">
-          <h1 className="h2 text-secondary-10">We are always here for you </h1>
-          <p className="p2 text-white-10">
-            Send us a whatsapp message, or chat with us on the app. You can also
-            reach us at{" "}
-            <a href="mailTo:info@buil.com" className="text-secondary-10">
-              info @build.com,
-            </a>
-            get instant feedback however you want
-          </p>
-          <Link to='/contact' className="flex items-center space-x-3">
-            Contact Us <IoIosArrowDropright />{" "}
-          </Link>
-        </div>
-        <div>
-          <img src={manSinging} alt="" />
+        <div className="max-w-[80em] m-auto flex flex-col-reverse md:flex-row justify-between items-center">
+          <div className="md:w-1/2 space-y-5 pb-[3em] md:pb-0">
+            <h1 className="h2 text-secondary-10">
+              We are always here for you{" "}
+            </h1>
+            <p className="p2 text-white-10">
+              Send us a whatsapp message, or chat with us on the app. You can
+              also reach us at{" "}
+              <a href="mailTo:help@ttmfb.com" className="text-secondary-10">
+                help@ttmfb.com,
+              </a>
+              get instant feedback however you want
+            </p>
+            <Link to="/contact" className="flex items-center space-x-3">
+              Contact Us <IoIosArrowDropright />{" "}
+            </Link>
+          </div>
+          <div className="justify-end items-end grid m-auto md:m-0">
+            <img src={manSinging} alt="" />
+          </div>
         </div>
       </body>
 

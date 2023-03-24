@@ -44,7 +44,7 @@ const BusinessHome = () => {
     },
   ];
   return (
-    <div>
+    <div className="font-sans">
       <Navbar />
 
       <header
@@ -66,7 +66,7 @@ const BusinessHome = () => {
         </div>
       </header>
 
-      <div className="bg-white-10 height-fit-content space-y-10 grid justify-center items-center px-[2em] lg:px-[20em]">
+      <div className="bg-white-10 height-fit-content space-y-10 grid m-auto max-w-[80em] justify-center items-center px-[2em] ">
         <p className="text-center h3 text-white-30">
           {" "}
           ️🌱 Grow your business with simple and efficient management tools. {" "}
@@ -78,8 +78,8 @@ const BusinessHome = () => {
           >
             <AiFillApple size="2em" />
             <p className="text-white-30">
-              Get on the <br />{" "}
-              <span className="text-secondary-10">App Store</span>{" "}
+              Get on the <br />
+              <span className="text-secondary-10">App Store</span>
             </p>
           </a>
           <a
@@ -87,46 +87,56 @@ const BusinessHome = () => {
             className="border border-primary-50 bg-primary-50 flex rounded-lg p-3 items-center w-[160px] space-x-2"
           >
             <TbBrandGooglePlay color="white" size="2em" />
-            <p className="text-white-30">
-              Get on the <br /> <span className="text-white-10">App Store</span>{" "}
+            <p className="text-white-10">
+              <span className="opacity-70">
+              Get on the
+              </span>
+               <br /> <span className="text-white-10">App Store</span>{" "}
             </p>
           </a>
         </div>
       </div>
 
-      <div className="mt-[5em] lg:px-[10em] grid items-center justify-center px-[2em] space-y-10">
+      <div className="mt-[5em]  grid items-center justify-between px-[2em] space-y-10 m-auto max-w-[80em] ">
         <h1 className="h2 text-secondary-10 text-center">
           Simple tools designed to help you take worry off your business
         </h1>
-        <div className="space-y-10 md:gap-[2em] md:gap-[2em] grid md:grid-cols-2 justify-center items-center m-auto">
-          {tools.map((tool) => (
-            <CardFlavor
-              coverImg={tool.image}
-              title={tool.title}
-              text={tool.text}
-            />
-          ))}
+        <div className="m-auto gap-[10em]">
+          <div className="space-y-[10em]  grid md:grid-cols-2 justify-center items-center">
+            
+            {tools.map((tool) => (
+              <CardFlavor
+                coverImg={tool.image}
+                title={tool.title}
+                text={tool.text}
+              />
+            ))}
+          </div>
+
         </div>
       </div>
 
-      <body
-        className="flex flex-col md:flex-row px-[2em] lg:px-[5em] md:h-fit-content py-[3em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] justify-between items-center bg-secondary-20 mt-[5em] "
-        style={{ backgroundImage: `url(${bgFrame})`, backgroundSize: "cover" }}
-      >
-        <div>
-          <img src={girl2} alt="" />
-        </div>
-        <div className="md:w-1/2 space-y-5 grid justify-between items-top">
-          <h1 className="h2 text-secondary-10">
-            Get a POS in 48 hrs, hassle free
-          </h1>
-          <p className="p2 text-white-10">
-            Request and get you POS delivered to <br /> you by our team....
-          </p>
-        </div>
-      </body>
+      <div className="bg-secondary-20 max-w-[80em] m-auto rounded-[3em]" style={{ backgroundImage: `url(${bgFrame})`, backgroundSize: "cover" }}>
+        <body
+          className="flex flex-col md:flex-row px-[2em] lg:px-[5em] md:h-fit-content py-[3em]  mx-[2em] lg:mx-[5em] my-[2em] justify-between items-center  mt-[5em] "
+          
+        >
+          <div>
+            <img src={girl2} alt="" />
+          </div>
+          <div className="md:w-1/2 space-y-5 grid justify-between items-top">
+            <h1 className="h2 text-secondary-10">
+              Get a POS in 48 hrs, hassle free
+            </h1>
+            <p className="p2 text-white-10">
+              Request and get you POS delivered to <br /> you by our team....
+            </p>
+          </div>
+        </body>
 
-      <body className="flex flex-col-reverse md:flex-row px-[2em] lg:px-[10em] justify-between my-[5em] items-center bg-white-10">
+      </div>
+
+      <body className="flex flex-col-reverse md:flex-row px-[2em]  justify-between my-[5em] items-center bg-white-10 m-auto max-w-[80em] ">
         <div className="md:w-1/2 space-y-5">
           <h1 className="h2 text-secondary-10">
             More than just <br /> a POS
@@ -143,7 +153,7 @@ const BusinessHome = () => {
         </div>
       </body>
 
-      <body className="flex flex-col-reverse md:flex-row-reverse px-[2em] lg:px-[10em] gap-[2em]  justify-between items-center my-[5em] bg-white-10">
+      <body className="flex flex-col-reverse md:flex-row-reverse px-[2em]  gap-[2em]  justify-between items-center my-[5em] bg-white-10 m-auto max-w-[80em]">
         <div className="md:w-1/2 space-y-5">
           <h1 className="h2 text-secondary-10">
           Comprehensive Real- <br /> time reports
@@ -160,7 +170,7 @@ const BusinessHome = () => {
         </div>
       </body>
 
-      <body className="flex flex-col-reverse md:flex-row px-[2em] lg:px-[10em] gap-[2em] my-[5em] justify-between items-center bg-white-10">
+      <body className="flex flex-col-reverse md:flex-row px-[2em]  gap-[2em] my-[5em] justify-between items-center bg-white-10 m-auto max-w-[80em]">
         <div className="md:w-1/2 space-y-5">
           <h1 className="h2 text-secondary-10">
           Seamless Dispute <br /> Resolutions
@@ -174,31 +184,34 @@ const BusinessHome = () => {
         </div>
       </body>
 
-      <body className="flex flex-col md:flex-row px-[2em] lg:px-[5em] md:h-fit-content py-[3em] rounded-[3em] gap-[2em] mx-[2em] lg:mx-[5em] my-[2em] justify-between items-center bg-secondary-10 mt-[5em] ">
-        <div>
-          <img src={girlHoldingPhone} alt="" />
-        </div>
-        <div className="md:w-1/2 space-y-5 grid justify-between items-top">
-          <h1 className="h2 text-secondary-20">Get Settled Instantly!</h1>
-          <ul className="p2 text-white-10">
-            <li className="list-disc">
-              No need waiting for a lifetime to receive money into your account
-              as all transactions are settled instantly
-            </li>
-            <li className="list-disc">
-              No more seeing POS alerts and settlement next day.{" "}
-            </li>
-            <li className="list-disc">
-              No more delaying customers to confirm alerts from Madam
-            </li>
-          </ul>
+      <div className="m-auto max-w-[80em] ">
+        <body className="flex flex-col md:flex-row px-[2em] lg:px-[5em] md:h-fit-content py-[3em] rounded-[3em] gap-[2em] mx-[2em] lg:mx-[5em] my-[2em] justify-between items-center bg-secondary-10 mt-[5em] ">
           <div>
-            <Button text="Get Started" />
+            <img src={girlHoldingPhone} alt="" />
           </div>
-        </div>
-      </body>
+          <div className="md:w-1/2 space-y-5 grid justify-between items-top">
+            <h1 className="h2 text-secondary-20">Get Settled Instantly!</h1>
+            <ul className="p2 text-white-10">
+              <li className="list-disc">
+                No need waiting for a lifetime to receive money into your account
+                as all transactions are settled instantly
+              </li>
+              <li className="list-disc">
+                No more seeing POS alerts and settlement next day.{" "}
+              </li>
+              <li className="list-disc">
+                No more delaying customers to confirm alerts from Madam
+              </li>
+            </ul>
+            <div>
+              <Button text="Get Started" />
+            </div>
+          </div>
+        </body>
 
-      <body className="flex flex-col-reverse md:flex-row px-[2em] lg:px-[10em] my-[5em] justify-between items-center bg-white-10">
+      </div>
+
+      <body className="flex flex-col-reverse md:flex-row px-[2em]  my-[5em] justify-between items-center bg-white-10 m-auto max-w-[80em] ">
         <div className="md:w-1/2 space-y-5">
           <h1 className="h2 text-secondary-10">
             Position your business <br /> for growth
@@ -214,11 +227,11 @@ const BusinessHome = () => {
         </div>
       </body>
 
-      <div className="gap-[2em]">
+      <div className="gap-[2em] max-w-[80em] m-auto ">
         <h1 className="h2 text-secondary-10 text-center">
           PStay relaxed all day, every day with <br /> end-to-end automation
         </h1>
-        <body className="flex flex-col-reverse md:flex-row-reverse lg:px-[10em] px-[2em] justify-between items-center bg-white-10 gap-[2em] ">
+        <body className="flex flex-col-reverse md:flex-row-reverse  px-[2em] justify-between items-center bg-white-10 gap-[2em] ">
           <div className="md:w-1/2 space-y-5">
             <p className="h4 text-white-30">
               Solve all your business problems with one smart integration to
@@ -264,25 +277,28 @@ const BusinessHome = () => {
       </div>
 
       <body
-        className="flex flex-col-reverse bg-secondary-20 md:flex-row px-[2em] lg:px-[5em] py-[3em] justify-between w-screen items-center bg-secondary-20"
+        className=" bg-secondary-20  px-[2em] lg:px-[5em] py-[3em] md:pb-0 w-screen  "
         style={{ backgroundImage: `url(${bgFrame})`, backgroundSize: "cover" }}
       >
-        <div className="md:w-1/2 space-y-5">
-          <h1 className="h2 text-secondary-10">We are always here for you </h1>
-          <p className="p2 text-white-10">
-            Send us a whatsapp message, or chat with us on the app. You can also
-            reach us at{" "}
-            <a href="mailTo:info@build.com" className="text-secondary-10">
-              info @build.com,
-            </a>
-            get instant feedback however you want
-          </p>
-          <Link to="/contact" className="flex items-center space-x-3">
-            Contact Us <IoIosArrowDropright />{" "}
-          </Link>
-        </div>
-        <div>
-          <img src={manSinging} alt="" />
+        <div className="max-w-[80em] m-auto flex flex-col-reverse md:flex-row justify-between">
+          <div className="md:w-1/2 space-y-5 pb-[3em] ">
+            <h1 className="h2 text-secondary-10">We are always here for you </h1>
+            <p className="p2 text-white-10">
+              Send us a whatsapp message, or chat with us on the app. You can also
+              reach us at{" "}
+              <a href="mailTo:help@ttmfb.com" className="text-secondary-10">
+                help@ttmfb.com,
+              </a>
+              get instant feedback however you want
+            </p>
+            <Link to='/contact' className="flex items-center space-x-3">
+              Contact Us <IoIosArrowDropright />{" "}
+            </Link>
+          </div>
+          <div className="justify-end items-end grid">
+            <img src={manSinging} alt="" />
+          </div>
+
         </div>
       </body>
 

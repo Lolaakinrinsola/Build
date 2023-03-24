@@ -4,7 +4,7 @@ module.exports = withMT({
   content: [ "./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
     fontFamily: {
-      adelia: ["ArticulatCF-700", "san-serif"],
+      sans: ["Plus Jakarta Sans", "san-serif"],
     },
     colors : {
       'primary': {

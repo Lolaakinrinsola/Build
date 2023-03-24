@@ -16,27 +16,31 @@ import bgFrame2 from '../Assets/Images/BG-CTA(1).png'
 
 const Contact = () => {
   return (
-    <div>
+    <div >
         <Navbar/>
-        <header className=' items-center flex flex-col md:flex-row mx-[2em] lg:mx-[5em] md:mx-[10em] lg:space-x-[10em] mt-[5em]'>
-            <div className='text-center md:text-left gap-[2em]  md:w-2/3 lg:w-1/2'>
-                <p className='h2 text-secondary-10'>Talk to Us</p>
-                <p className='p3 text-white-30 md:w-[80%] '>Let’s help you get started and sort whatever brings you here today. Please fill in the fields below, we will reach out to you very soon</p>
-            </div>
-            <div className='border border-white-50 grid px-4 space-y-5 w-[60%] lg:w-[30%] mt-[2em] md:mt-0 md:h-[30%] py-10 rounded-lg'>
-                <img src={mail} alt="" className='m-auto' />
-                <div className='text-center'>
-                    <h1>Check FAQ</h1>
-                    <p>Who knows, your questions might have been answered before. Visum provides a community to support it’s users</p>
 
+        <div className='m-auto max-w-[80em] '>
+            <header className=' items-center flex flex-col md:flex-row mx-[2em] lg:mx-[5em] md:mx-[10em] lg:space-x-[10em] mt-[5em] '>
+                <div className='text-center md:text-left gap-[2em]  md:w-2/3 lg:w-1/2'>
+                    <p className='h2 text-secondary-10'>Talk to Us</p>
+                    <p className='p3 text-white-30 md:w-[80%] '>Let’s help you get started and sort whatever brings you here today. Please fill in the fields below, we will reach out to you very soon</p>
                 </div>
-                <div className='grid w-full'>
-                    <Button text='Go to FAQ' />
-                </div>
-            </div>
-        </header>
+                <div className='border border-white-50 grid px-4 space-y-5 w-[60%] lg:w-[30%] mt-[2em] md:mt-0 md:h-[30%] py-10 rounded-lg'>
+                    <img src={mail} alt="" className='m-auto' />
+                    <div className='text-center'>
+                        <h1>Check FAQ</h1>
+                        <p>Who knows, your questions might have been answered before. Visum provides a community to support it’s users</p>
 
-        <div className='flex flex-col md:flex-row px-[2em] lg:px-[5em] md:space-x-[3em] mt-[5em] '>
+                    </div>
+                    <div className='grid w-full'>
+                        <Button text='Go to FAQ' />
+                    </div>
+                </div>
+            </header>
+
+        </div>
+
+        <div className='flex flex-col md:flex-row px-[2em] lg:px-[5em] md:space-x-[3em] mt-[5em] max-w-[80em] m-auto '>
             <div className='md:w-full md:h-fit-content space-y-[1em] m-auto md:m-0 py-[3em] px-[2em] md:px-[5em] md:pt-[7em] ' style={{backgroundImage: `url(${bg})`,backgroundSize:'cover'}}>
                 <p className='flex items-center'> <img src={icon6} alt="" /> 3LINE Card Management Limited </p>
                 <p className='flex items-center'><img src={icon7} alt="" className='flex'/>7A Idejo Street Victora Island, Lagos Nigeria </p>
@@ -59,18 +63,20 @@ const Contact = () => {
             </div>
         </div>
 
+        <div className='max-w-[80em] m-auto '>
+            <body className='flex flex-col md:h-fit-content space-y-[5em] p-[2em] lg:p-[6em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] justify-between bg-secondary-10 items-center mt-[10em] ' style={{backgroundImage: `url(${bgFrame2})`,backgroundSize:'contain'}} >
+                        <div className='md:w-[60%] flex flex-col justify-center items-center m-auto'>
 
-        <body className='flex flex-col md:h-fit-content space-y-[5em] p-[2em] lg:p-[6em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] justify-between bg-secondary-10 items-center mt-[10em] ' style={{backgroundImage: `url(${bgFrame2})`,backgroundSize:'contain'}} >
-                    <div className='md:w-[60%] flex flex-col justify-center items-center m-auto'>
+                            <h1 className='h2 text-center text-white-10'>Make the most of your dreams today</h1>
+                        </div>
+                        <div className=' grid justify-center'>
 
-                        <h1 className='h2 text-center text-white-10'>Make the most of your dreams today</h1>
-                    </div>
-                    <div className=' grid justify-center'>
+                        <Button text='Get Started' />
+                        </div>
+                    
+                </body>
 
-                    <Button text='Get Started' />
-                    </div>
-                
-            </body>
+        </div>
 
 
         <Footer/>
