@@ -19,7 +19,7 @@ const Navbar = (props) => {
     const [options, setOptions]= useState(false)
   return (
     <div className=''>
-    <div className={(`flex w-screen max-w-[100em] m-auto justify-between items-center py-5 md:pl-[5em] px-[2em] md:pr-[10em] + ${props.className}`)}>
+    <div className={(`flex w-screen max-w-[80em] m-auto justify-between items-center py-5 md:pl-[5em] px-[2em] md:pr-[10em] + ${props.className}`)}>
         <Link to='/' className='items-center'>
             <img src={props.logo} alt="logo"/>
         </Link>
@@ -73,14 +73,14 @@ const Navbar = (props) => {
     </div>
     <div className='hidden md:block absolute top-[0%] right-[0%] py-7 pr-[5em] justify-center items-center max-w-[80em] m-auto '>
         <div className=" flex flex-col items-center space-y-4">
-            <img src={circle} alt="facebook"  className='pb-20'/>
-            <a href="#"><FaFacebookF color='white'/></a>
+            <img src={circle} alt="facebook"  className='pb-[9em] '/>
+            <a href="#"><FaFacebookF color='white' size='1.5em' /></a>
+            <a href="#"><img src={line} alt="facebook" size='1.5em'/></a>
+            <a href="#"><FaInstagram color='white'size='1.5em'/></a>
             <a href="#"><img src={line} alt="facebook" /></a>
-            <a href="#"><FaInstagram color='white'/></a>
+            <a href="#"><FaTwitter color='white'size='1.5em'/></a>
             <a href="#"><img src={line} alt="facebook" /></a>
-            <a href="#"><FaTwitter color='white'/></a>
-            <a href="#"><img src={line} alt="facebook" /></a>
-            <a href="#"><FaLinkedin color='white'/></a>
+            <a href="#"><FaLinkedin color='white'size='1.5em'/></a>
 
         </div>
     </div>

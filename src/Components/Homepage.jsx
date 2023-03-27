@@ -23,7 +23,7 @@ import { TbBrandGooglePlay } from "react-icons/tb";
 import { IoIosArrowDropright } from "react-icons/io";
 import bg from "../Assets/Images/BG-2.png";
 import "../Assets/styles/global.css";
-import license from "../Assets/Images/Blurred.png";
+import license from "../Assets/Images/Framelicense.png";
 import logo from "../Assets/Images/Logo-2.png";
 import front from "../Assets/Images/building1.png";
 import back from "../Assets/Images/building2.png";
@@ -31,16 +31,21 @@ import store from "../Assets/Images/store-front.png";
 import buldingBlock from "../Assets/Images/buildingBlock.png";
 import girl from "../Assets/Images/girlSmiling.png";
 import girl2 from "../Assets/Images/girlWorking.png";
+import girl3 from "../Assets/Images/Img-visum.png";
 import message from "../Assets/Images/message.png";
 import spacebg from "../Assets/Images/spacebg.png";
+import yellowline from "../Assets/Images/yellowline.png";
 import bgCta from "../Assets/Images/BG-CTA.png";
 import girlHoldingPhone from "../Assets/Images/girl2.png";
 import front2 from "../Assets/Images/building3.png";
 import back2 from "../Assets/Images/building4.png";
 import manSinging from "../Assets/Images/manSinging.png";
 import bgFrame from "../Assets/Images/Frame.png";
+import ppt from "../Assets/Images/PPT.png";
+import bgFrame2 from "../Assets/Images/BGCTA.png";
 import search from "../Assets/Images/Search.png";
 import fire from "../Assets/Images/fire.png";
+import storeimage from "../Assets/Images/Store-image-download.png";
 import rocket from "../Assets/Images/Rocket.png";
 import Button from "./Button";
 import { Link } from "react-router-dom";
@@ -69,6 +74,10 @@ const Homepage = () => {
       text: "Business Investments",
       image: require("../Assets/Images/Icon-11.png"),
     },
+    {
+      text: "Loans",
+      image: require("../Assets/Images/Icon-13.png"),
+    },
   ];
 
   return (
@@ -78,7 +87,7 @@ const Homepage = () => {
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
         <Navbar className='text-white-10' logo={logo}/>
-        <header className=" flex flex-col justify-center  mt-[9em] md:space-y-5 text-white-10 px-[2em] max-w-[80em] lg:px-[5em] m-auto">
+        <header className=" flex flex-col justify-center mt-[3em] md:mt-[9em] md:space-y-5 text-white-10 px-[2em] max-w-[80em] lg:px-[5em] m-auto h-fit-content">
           <div className="flex flex-col gap-[5em] ">
           <div className="grid gap-[1em] ">
 
@@ -88,20 +97,21 @@ const Homepage = () => {
               <Typed
                 className="text-primary-100"
                 strings={[
-                  " sustainable Finance",
-                  " sustainable Business",
-                  " savings Culture",
+                  " sustainable finance",
+                  " successful business",
+                  " savings culture",
                 ]}
-                typeSpeed={30}
+                typeSpeed={120}
                 backSpeed={50}
                 loop
               ></Typed>
             </h1>
-            <p className="p1 bg-gradient-to-r from-gradient-10 to-gradient-20 py-4 md:w-[75%] lg:w-[50%] px-3 rounded-xl bg-blur">
+            <p className="p1 py-4 md:w-[75%] lg:w-[50%] px-3  ">
               End-to-end payments and financial management in a single solution. <br/>
               Meet the right platform to help realize your dreams.
             </p>
             <div>
+            <img src={license} alt="license"/>
           </div>
 
           </div>
@@ -111,22 +121,24 @@ const Homepage = () => {
           </div>
           </div>
         </header>
-                <div className="absolute bottom-[-4%] lg:bottom-[-7%] w-1/2 right-[25%] justify-center m-auto">
-                  <img src={license} alt="" className="m-auto" />
-
-                </div>
+                
       </div>
 
-      <div className="flex flex-col-reverse md:flex-row max-w-[80em] m-auto px-[2em] lg:px-[5em] lg:h-screen mt-[2em] md:mt-0 justify-between items-center bg-white-40">
+      <div className="flex flex-col-reverse md:flex-row max-w-[80em] m-auto px-[2em] lg:px-[5em] lg:h-screen mt-[2em] md:mt-0 justify-between items-center bg-white-40 ">
         <div className="lg:w-1/2 md:w-2/3 space-y-5">
+          <div>
           <p className="p3 text-white-30 mt-[2em] mt-0">about build bank</p>
+          <div className="relative left-[0%] top-[14.2em] md:left-[55%] md:top-[7em] ">
+            <img src={yellowline} alt="" />
+
+          </div>
+
+          </div>
           <h1 className="h2 text-secondary-10">
-            A bank that build’s your dream 💛
+            A bank that build’s your dream 
           </h1>
           <p className="p2 text-white-30">
-            Build is designed to solve payment and retail management problems of
-            businesses and that’s exactly what happens when you use Build for
-            your business
+          We are designed to solve payment and retail management problems of businesses and that’s exactly what happens when you choose TTMFB for your business.
           </p>
           <div className="space-y-2 p2 text-white-30 ">
             <div className="flex gap-1">
@@ -140,11 +152,18 @@ const Homepage = () => {
                 <img src={search} alt="" />
               </div>
               <p>Keep track of your business financials</p>
-            </div><div className="flex gap-1">
+            </div>
+            <div className="flex gap-1">
               <div className="">
                 <img src={rocket} alt="" />
               </div>
               <p>Increase business profit and revenue</p>
+            </div>
+            <div className="flex gap-1">
+              <div className="">
+                <img src={rocket} alt="" />
+              </div>
+              <p>Empower your business with smart POS collections</p>
             </div>
           </div>
 
@@ -153,7 +172,34 @@ const Homepage = () => {
           </Link>
         </div>
         <div>
-          <img src={store} alt="" />
+          <img src={storeimage} alt="" />
+        </div>
+      </div>
+      
+      <div className="bg-secondary-10 text-white-10 py-[7em]  mt-[3em] md:mt-0 ">
+        <div className="px-[2em] max-w-[80em] m-auto lg:px-[10em] ">
+          <div className="flex flex-col md:flex-row items-center gap-7 justify-between pb-[2.5em] ">
+            <div className="flex gap-1 items-center ">
+              <p className="h5">₦1B</p>
+              <p className=" h4 font-medium">Collections <br /> Processed</p>
+            </div>
+            <div className="flex gap-1 items-center">
+              <p className="h5">4</p>
+              <p className=" h4 font-medium">months <br /> pace</p>
+            </div>
+            <div className="flex gap-1 items-center">
+              <p className="h5">98%</p>
+              <p className=" h4 font-medium">Uptime</p>
+            </div>
+          </div>
+          <div className="  m-auto">
+            <p className="text-center h4">
+            N1B collections made for our businesses just in 4 months with 98% uptime. 
+            We make payment collections fast and easy while also ensuring security.
+            </p>
+
+          </div>
+
         </div>
       </div>
 
@@ -187,6 +233,41 @@ const Homepage = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <body className="flex flex-col-reverse md:flex-row px-[2em] lg:px-[10em] md:h-screen justify-between items-center bg-white-40 max-w-[80em] m-auto  my-[2em] ">
+        <div className="md:w-1/2 space-y-5">
+          <p className="p3 text-white-30">Introducing Visum</p>
+          <h1 className="h2 text-secondary-10">Enhance your business with POS collections</h1>
+          <p className="p2 text-white-30">
+          Beyond POS application, using Visum assures you the visibility, simplicity, organization and growth you desire as a business owner
+          with tools designed to take worry off your business
+          </p>
+
+          <Button text="Explore Visum" />
+        </div>
+        <div>
+          <img src={girl3} alt="" />
+        </div>
+      </body>
+
+      <div className="max-w-[80em] m-auto ">
+        <body className="flex flex-col md:flex-row px-5 lg:px-[5em] md:h-fit-content py-[5em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] md:my-0 justify-between items-center gap-[2em] bg-secondary-20 " style={{ backgroundImage: `url(${ppt})`, backgroundSize: "cover" }}>
+          <div>
+            <img src={girl2} alt="" />
+          </div>
+          <div className="md:w-2/3 lg:w-1/2  space-y-5 grid items-top">
+            <h1 className="h2 text-secondary-10">
+            Get a POS in 48 hrs, hassle free
+            </h1>
+            <p className="p2 text-white-10">
+            Request and get you POS delivered to you by our team....
+            </p>
+            <div>
+              <Button text='Start Journey' className='!bg-primary-200' />
+            </div>
+          </div>
+        </body>
       </div>
 
       <body className="flex flex-col-reverse md:flex-row px-[2em] lg:px-[10em] md:h-screen justify-between items-center bg-white-40 max-w-[80em] m-auto  ">
@@ -255,7 +336,7 @@ const Homepage = () => {
         <img src={spacebg} alt="" className="lg:hidden" />
       </div>
 
-      <body className="flex flex-col-reverse md:flex-row-reverse px-[2em] md:h-screen justify-between items-center bg-white-40 gap-[2em] max-w-[80em] m-auto ">
+      <body className="flex flex-col-reverse md:flex-row-reverse px-[2em] md:h-screen justify-between items-center bg-white-40 gap-[2em] max-w-[80em] m-auto lg:px-[10em] ">
         <div className="md:w-1/2 space-y-5">
           <h1 className="h2 text-secondary-10">Choose us for your business</h1>
           <p className="p2 text-white-30">
@@ -271,7 +352,7 @@ const Homepage = () => {
       </body>
 
       <div className="max-w-[80em] m-auto">
-        <body className="flex flex-col md:h-fit-content space-y-[5em] lg:p-[6em] rounded-[3em] mx-[2em] p-[2em] md:mx-[5em] my-[2em] md:my-0 justify-between items-center bg-secondary-10">
+        <body className="flex flex-col md:h-fit-content space-y-[5em] lg:p-[6em] rounded-[3em] mx-[2em] p-[2em] md:mx-[5em] my-[2em] md:my-0 justify-between items-center "  style={{ backgroundImage: `url(${bgFrame2})`, backgroundSize: "cover" }}>
           <div className="md:w-[60%] flex flex-col justify-center items-center m-auto">
             <h1 className="h2 text-center text-white-10">
               A Bank after your own heart, Build bank
