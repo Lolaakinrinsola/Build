@@ -37,6 +37,7 @@ import spacebg from "../Assets/Images/spacebg.png";
 import yellowline from "../Assets/Images/yellowline.png";
 import bgCta from "../Assets/Images/BG-CTA.png";
 import girlHoldingPhone from "../Assets/Images/girl2.png";
+import girlWithPos from "../Assets/Images/girl-with-POS.png";
 import front2 from "../Assets/Images/building3.png";
 import back2 from "../Assets/Images/building4.png";
 import manSinging from "../Assets/Images/manSinging.png";
@@ -63,16 +64,16 @@ const Homepage = () => {
       image: require("../Assets/Images/Icon-8.png"),
     },
     {
-      text: "Payments",
-      image: require("../Assets/Images/Icon-9.png"),
+      text: "Payments & Collections",
+      image: require("../Assets/Images/Icon-14.png"),
     },
     {
-      text: "Loans",
-      image: require("../Assets/Images/Icon-10.png"),
+      text: "Business Banking",
+      image: require("../Assets/Images/Icon-15.png"),
     },
     {
       text: "Business Investments",
-      image: require("../Assets/Images/Icon-11.png"),
+      image: require("../Assets/Images/Icon-16.png"),
     },
     {
       text: "Loans",
@@ -86,59 +87,56 @@ const Homepage = () => {
         className="h-screen"
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
-        <Navbar className='text-white-10' logo={logo}/>
+        <Navbar className="text-white-10" logo={logo} />
         <header className=" flex flex-col justify-center mt-[3em] md:mt-[9em] md:space-y-5 text-white-10 px-[2em] max-w-[80em] lg:px-[5em] m-auto h-fit-content">
           <div className="flex flex-col gap-[5em] ">
-          <div className="grid gap-[1em] ">
-
-            <h1 className="h1 text-left border-5 min-h-[7.5em] md:min-h-0">
-              Do more than just banking, <br />
-              Build a {' '}
-              <Typed
-                className="text-primary-100"
-                strings={[
-                  " sustainable finance",
-                  " successful business",
-                  " savings culture",
-                ]}
-                typeSpeed={120}
-                backSpeed={50}
-                loop
-              ></Typed>
-            </h1>
-            <p className="p1 py-4 md:w-[75%] lg:w-[50%] px-3  ">
-              End-to-end payments and financial management in a single solution. <br/>
-              Meet the right platform to help realize your dreams.
-            </p>
-            <div>
-            <img src={license} alt="license"/>
-          </div>
-
-          </div>
-          <div>
-          <Button text="Get Started" />
-
-          </div>
+            <div className="grid gap-[1em] ">
+              <h1 className="h3 !font-bold text-center md:h1 md:text-left border-5 min-h-[6em] md:min-h-0">
+                Do more than just banking, <br />
+                Build a{" "}
+                <Typed
+                  className="text-primary-100"
+                  strings={[
+                    " sustainable finance",
+                    " successful business",
+                    " savings culture",
+                  ]}
+                  typeSpeed={120}
+                  backSpeed={50}
+                  loop
+                ></Typed>
+              </h1>
+              <p className="p1 py-4 md:w-[75%] text-center md:text-left lg:w-[50%] px-3  ">
+                End-to-end payments and financial management in a single
+                solution. <br />
+                Meet the right platform to help realize your dreams.
+              </p>
+              <div className=" m-auto md:m-0">
+                <img src={license} alt="license" />
+              </div>
+            </div>
+            <div className=" m-auto md:m-0">
+              <Button text="Get Started" />
+            </div>
           </div>
         </header>
-                
       </div>
 
       <div className="flex flex-col-reverse md:flex-row max-w-[80em] m-auto px-[2em] lg:px-[5em] lg:h-screen mt-[2em] md:mt-0 justify-between items-center bg-white-40 ">
         <div className="lg:w-1/2 md:w-2/3 space-y-5">
           <div>
-          <p className="p3 text-white-30 mt-[2em] mt-0">about build bank</p>
-          <div className="relative left-[0%] top-[14.2em] md:left-[55%] md:top-[7em] ">
-            <img src={yellowline} alt="" />
-
-          </div>
-
+            <p className="p3 text-white-30 mt-[2em] mt-0">about build bank</p>
+            <div className="relative left-[0%] top-[14.2em] md:left-[55%] md:top-[7em] ">
+              <img src={yellowline} alt="" />
+            </div>
           </div>
           <h1 className="h2 text-secondary-10">
-            A bank that build’s your dream 
+            A bank that build’s your dream
           </h1>
           <p className="p2 text-white-30">
-          We are designed to solve payment and retail management problems of businesses and that’s exactly what happens when you choose TTMFB for your business.
+            We are designed to solve payment and retail management problems of
+            businesses and that’s exactly what happens when you choose TTMFB for
+            your business.
           </p>
           <div className="space-y-2 p2 text-white-30 ">
             <div className="flex gap-1">
@@ -175,17 +173,21 @@ const Homepage = () => {
           <img src={storeimage} alt="" />
         </div>
       </div>
-      
+
       <div className="bg-secondary-10 text-white-10 py-[7em]  mt-[3em] md:mt-0 ">
         <div className="px-[2em] max-w-[80em] m-auto lg:px-[10em] ">
           <div className="flex flex-col md:flex-row items-center gap-7 justify-between pb-[2.5em] ">
             <div className="flex gap-1 items-center ">
               <p className="h5">₦1B</p>
-              <p className=" h4 font-medium">Collections <br /> Processed</p>
+              <p className=" h4 font-medium">
+                Collections <br /> Processed
+              </p>
             </div>
             <div className="flex gap-1 items-center">
               <p className="h5">4</p>
-              <p className=" h4 font-medium">months <br /> pace</p>
+              <p className=" h4 font-medium">
+                months <br /> pace
+              </p>
             </div>
             <div className="flex gap-1 items-center">
               <p className="h5">98%</p>
@@ -194,12 +196,11 @@ const Homepage = () => {
           </div>
           <div className="  m-auto">
             <p className="text-center h4">
-            N1B collections made for our businesses just in 4 months with 98% uptime. 
-            We make payment collections fast and easy while also ensuring security.
+              N1B collections made for our businesses just in 4 months with 98%
+              uptime. We make payment collections fast and easy while also
+              ensuring security.
             </p>
-
           </div>
-
         </div>
       </div>
 
@@ -218,7 +219,7 @@ const Homepage = () => {
       </div>
 
       <div className="bg-primary-10 px-[2em] lg:px-[10em] py-[2em] md:h-screen">
-        <h1 className="text-center h2 text-secondary-10">Find your Flavor</h1>
+        <h1 className="text-center h2 text-primary-300">Find your Flavor</h1>
         <div className="flex flex-wrap  justify-center space-y-5 md:space-y-0 gap-5 mt-[2em] max-w-[80em] m-auto ">
           {flavor.map((flavors) => (
             <div className="bg-white-10 rounded-[2em] grid justify-space-around md:w-1/3 w-full h-[264px] max-w-[17em] ">
@@ -238,13 +239,16 @@ const Homepage = () => {
       <body className="flex flex-col-reverse md:flex-row px-[2em] lg:px-[10em] md:h-screen justify-between items-center bg-white-40 max-w-[80em] m-auto  my-[2em] ">
         <div className="md:w-1/2 space-y-5">
           <p className="p3 text-white-30">Introducing Visum</p>
-          <h1 className="h2 text-secondary-10">Enhance your business with POS collections</h1>
+          <h1 className="h2 text-secondary-10">
+            Enhance your business with POS collections
+          </h1>
           <p className="p2 text-white-30">
-          Beyond POS application, using Visum assures you the visibility, simplicity, organization and growth you desire as a business owner
-          with tools designed to take worry off your business
+            Beyond POS application, using <span className="text-primary-200">{' '} Visum</span>  assures you the visibility,
+            simplicity, organization and growth you desire as a business owner
+            with tools designed to take worry off your business
           </p>
 
-          <Button text="Explore Visum" />
+          <Button text="Explore Visum" className="!bg-primary-200" />
         </div>
         <div>
           <img src={girl3} alt="" />
@@ -252,19 +256,22 @@ const Homepage = () => {
       </body>
 
       <div className="max-w-[80em] m-auto ">
-        <body className="flex flex-col md:flex-row px-5 lg:px-[5em] md:h-fit-content py-[5em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] md:my-0 justify-between items-center gap-[2em] bg-secondary-20 " style={{ backgroundImage: `url(${ppt})`, backgroundSize: "cover" }}>
+        <body
+          className="flex flex-col md:flex-row px-5 lg:px-[5em] md:h-fit-content py-[5em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] md:my-0 justify-between items-center gap-[2em] bg-secondary-20 "
+          style={{ backgroundImage: `url(${ppt})`, backgroundSize: "cover" }}
+        >
           <div>
-            <img src={girl2} alt="" />
+            <img src={girlWithPos} alt="" />
           </div>
           <div className="md:w-2/3 lg:w-1/2  space-y-5 grid items-top">
             <h1 className="h2 text-secondary-10">
-            Get a POS in 48 hrs, hassle free
+              Get a POS in 48 hrs, hassle free
             </h1>
             <p className="p2 text-white-10">
-            Request and get you POS delivered to you by our team....
+              Request and get you POS delivered to you by our team....
             </p>
             <div>
-              <Button text='Start Journey' className='!bg-primary-200' />
+              <Button text="Start Journey" className="!bg-primary-200" />
             </div>
           </div>
         </body>
@@ -352,7 +359,13 @@ const Homepage = () => {
       </body>
 
       <div className="max-w-[80em] m-auto">
-        <body className="flex flex-col md:h-fit-content space-y-[5em] lg:p-[6em] rounded-[3em] mx-[2em] p-[2em] md:mx-[5em] my-[2em] md:my-0 justify-between items-center "  style={{ backgroundImage: `url(${bgFrame2})`, backgroundSize: "cover" }}>
+        <body
+          className="flex flex-col md:h-fit-content space-y-[5em] lg:p-[6em] rounded-[3em] mx-[2em] p-[2em] md:mx-[5em] my-[2em] md:my-0 justify-between items-center "
+          style={{
+            backgroundImage: `url(${bgFrame2})`,
+            backgroundSize: "cover",
+          }}
+        >
           <div className="md:w-[60%] flex flex-col justify-center items-center m-auto">
             <h1 className="h2 text-center text-white-10">
               A Bank after your own heart, Build bank

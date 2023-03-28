@@ -12,6 +12,7 @@ module.exports = withMT({
         50 : '#007AF4',
         100:'#FECA03',
         200:'#00CEFC',
+        300:'rgba(0, 28, 136, 1)'
       },
       'white':{
         10: '#FFFFFF',
