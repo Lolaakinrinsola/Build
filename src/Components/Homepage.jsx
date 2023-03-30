@@ -57,7 +57,7 @@ const Homepage = () => {
   const flavor = [
     {
       text: "Digital Banking",
-      image: require("../Assets/Icons/Icon-17.png"),
+      image: require("../Assets/Images/Icon-17.png"),
     },
     {
       text: "Savings",
