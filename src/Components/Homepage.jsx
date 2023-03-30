@@ -57,7 +57,7 @@ const Homepage = () => {
   const flavor = [
     {
       text: "Digital Banking",
-      image: require("../Assets/Icons/Icon.png"),
+      image: require("../Assets/Icons/Icon-17.png"),
     },
     {
       text: "Savings",
@@ -84,8 +84,8 @@ const Homepage = () => {
   return (
     <div className="bg-white-40">
       <div
-        className="h-screen"
-        style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
+        className="h-screen home"
+       
       >
         <Navbar className="text-white-10" logo={logo} />
         <header className=" flex flex-col justify-center mt-[3em] md:mt-[9em] md:space-y-5 text-white-10 px-[2em] max-w-[80em] lg:px-[5em] m-auto h-fit-content">
@@ -124,15 +124,15 @@ const Homepage = () => {
 
       <div className="flex flex-col-reverse md:flex-row max-w-[80em] m-auto px-[2em] lg:px-[5em] lg:h-screen mt-[2em] md:mt-0 justify-between items-center bg-white-40 ">
         <div className="lg:w-1/2 md:w-2/3 space-y-5">
-          <div>
             <p className="p3 text-white-30 mt-[2em] mt-0">about build bank</p>
-            <div className="relative left-[0%] top-[14.2em] md:left-[55%] md:top-[7em] ">
-              <img src={yellowline} alt="" />
-            </div>
-          </div>
+          <div>
           <h1 className="h2 text-secondary-10">
             A bank that build’s your dream
           </h1>
+            <div className="relative left-[20%] lg:left-0 top-[0] w-[30%]">
+              <img src={yellowline} alt="" />
+            </div>
+          </div>
           <p className="p2 text-white-30">
             We are designed to solve payment and retail management problems of
             businesses and that’s exactly what happens when you choose TTMFB for
@@ -176,8 +176,8 @@ const Homepage = () => {
 
       <div className="bg-secondary-10 text-white-10 py-[7em]  mt-[3em] md:mt-0 ">
         <div className="px-[2em] max-w-[80em] m-auto lg:px-[10em] ">
-          <div className="flex flex-col md:flex-row items-center gap-7 justify-between pb-[2.5em] ">
-            <div className="flex gap-1 items-center ">
+          <div className="flex flex-col md:flex-row items-center gap-12 justify-between pb-[2.5em] ">
+            <div className="flex gap-1 items-center">
               <p className="h5">₦1B</p>
               <p className=" h4 font-medium">
                 Collections <br /> Processed
