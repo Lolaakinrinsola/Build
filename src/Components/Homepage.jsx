@@ -91,7 +91,7 @@ const Homepage = () => {
         <header className=" flex flex-col justify-center mt-[3em] md:mt-[9em] md:space-y-5 text-white-10 px-[2em] max-w-[80em] lg:px-[5em] m-auto h-fit-content">
           <div className="flex flex-col gap-[5em] ">
             <div className="grid gap-[1em] ">
-              <h1 className="h3 !font-bold text-center md:h1 md:text-left border-5 min-h-[6em] md:min-h-0">
+              <h1 className="text-[2em] !font-bold text-center md:text-[3.2em] md:text-left border-5 min-h-[6em] md:min-h-0">
                 Do more than just banking, <br />
                 Build a{" "}
                 <Typed

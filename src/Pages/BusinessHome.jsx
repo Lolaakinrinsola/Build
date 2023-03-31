@@ -2,9 +2,10 @@ import React from "react";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router-dom";
-import license from "../Assets/Images/Blurred.png";
+import license from "../Assets/Images/Framelicense.png";
 import Button from "../Components/Button";
 import bg from "../Assets/Images/BG-4.png";
+import icon18 from "../Assets/Images/Icon-18.png";
 import "../Assets/styles/global.css";
 import store from "../Assets/Images/store-front2.png";
 import { AiFillApple } from "react-icons/ai";
@@ -48,38 +49,48 @@ const BusinessHome = () => {
   ];
   return (
     <div className="font-sans">
-      <div
-        className="h-screen"
+     <div
+        className="h-screen "
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
         <Navbar className="text-white-10" logo={logo} />
-        <header className=" flex flex-col justify-center  mt-[9em] md:space-y-5 text-white-10 px-[2em] max-w-[80em] lg:px-[5em] m-auto">
+        <header className=" flex flex-col justify-center mt-[3em] md:mt-[9em] md:space-y-5 text-white-10 px-[2em] max-w-[80em] lg:px-[5em] m-auto h-fit-content">
           <div className="flex flex-col gap-[5em] ">
             <div className="grid gap-[1em] ">
-              <h1 className="h1 text-left border-5 ">
-                Managing your business <br /> made easy   
+              <h1 className="text-[2em] !font-bold text-center md:text-[3.2em]  md:text-left border-5 min-h-[6em] md:min-h-0">
+              Managing your business made  <br />
+              easy, {" "}
+                <Typed
+                  className="text-primary-100"
+                  strings={[
+                    " make money",
+                    " spend money",
+                    " manage money",
+                  ]}
+                  typeSpeed={120}
+                  backSpeed={50}
+                  loop
+                ></Typed>
               </h1>
-              <p className="p1 bg-gradient-to-r from-gradient-10 to-gradient-20 py-4 md:w-[75%] lg:w-[50%] px-3 rounded-xl bg-blur">
-                Build is a modern digital bank which makes use of technology to
-                provide access to tools that support small/ medium scale
-                businesses and individuals.
+              <p className="p1 py-4 md:w-[75%] text-center md:text-left lg:w-[50%] px-3  ">
+              We are a modern digital bank making use of technology to provide access to <br className="hidden md:block"/> tools that support corporate, small/medium scale businesses and individuals.
               </p>
-              <div></div>
+              <div className=" m-auto md:m-0 ">
+                <img src={license} alt="license" />
+              </div>
             </div>
-            <div>
-              <Button text="Get Started" />
+            <div className=" m-auto md:m-0">
+              <Button text="Create a Business Account" />
             </div>
           </div>
         </header>
-        <div className="absolute bottom-[-4%] lg:bottom-[-7%] w-1/2 right-[25%] justify-center m-auto">
-          <img src={license} alt="" className="m-auto" />
-        </div>
       </div>
 
-      <div className="bg-white-10 height-fit-content space-y-10 grid m-auto max-w-[80em] justify-center items-center px-[2em] ">
+      <div className="bg-white-10 height-fit-content space-y-10 grid m-auto max-w-[80em] mt-[5em] justify-center items-center px-[2em] ">
+        <img src={icon18} alt="" className="m-auto"/>
         <p className="text-center h3 text-white-30">
           {" "}
-          ️🌱 Grow your business with simple and efficient management tools. {" "}
+          ️Grow your business with simple and efficient management tools. {" "}
         </p>
         <div className="flex space-x-7 justify-center">
           <a
@@ -105,12 +116,28 @@ const BusinessHome = () => {
         </div>
       </div>
 
+      <body className="flex flex-col-reverse md:flex-row px-[2em]  justify-between my-[5em] items-center bg-white-10 m-auto max-w-[80em] lg:px-[10em] ">
+        <div className="md:w-1/2 space-y-5">
+          <h1 className="h2 text-secondary-10 text-center md:text-left">
+            More than just <br className="hidden md:block" /> a POS
+          </h1>
+          <p className="p2 text-white-30">
+            Build business is designed to solve retail management problems,
+            asides payment collections, you can track all transactions done on
+            your POS with your mobile phone and web application dedicated to
+            you.
+          </p>
+        </div>
+        <div>
+          <img src={inage} alt="" />
+        </div>
+      </body>
+
       <div className="mt-[5em]  grid items-center justify-between px-[2em] space-y-10 m-auto max-w-[80em] ">
         <h1 className="h2 text-secondary-10 text-center">
           Simple tools designed to help you take worry off your business
         </h1>
-        <div className="m-auto gap-[10em]">
-          <div className="space-y-[10em]  grid md:grid-cols-2 justify-center items-center">
+          <div className="space-y-[10em]  grid md:grid-cols-2 justify-center items-center m-auto md:gap-[10em] md:space-y-0">
             {tools.map((tool) => (
               <CardFlavor
                 coverImg={tool.image}
@@ -119,7 +146,6 @@ const BusinessHome = () => {
               />
             ))}
           </div>
-        </div>
       </div>
 
       <div
@@ -141,24 +167,7 @@ const BusinessHome = () => {
         </body>
       </div>
 
-      <body className="flex flex-col-reverse md:flex-row px-[2em]  justify-between my-[5em] items-center bg-white-10 m-auto max-w-[80em] ">
-        <div className="md:w-1/2 space-y-5">
-          <h1 className="h2 text-secondary-10">
-            More than just <br /> a POS
-          </h1>
-          <p className="p2 text-white-30">
-            Build business is designed to solve retail management problems,
-            asides payment collections, you can track all transactions done on
-            your POS with your mobile phone and web application dedicated to
-            you.
-          </p>
-        </div>
-        <div>
-          <img src={inage} alt="" />
-        </div>
-      </body>
-
-      <body className="flex flex-col-reverse md:flex-row-reverse px-[2em]  gap-[2em]  justify-between items-center my-[5em] bg-white-10 m-auto max-w-[80em]">
+      <body className="flex flex-col-reverse md:flex-row-reverse px-[2em]  gap-[2em]  justify-between items-center my-[5em] bg-white-10 m-auto max-w-[80em] lg:px-[10em]">
         <div className="md:w-1/2 space-y-5">
           <h1 className="h2 text-secondary-10">
             Comprehensive Real- <br /> time reports
@@ -175,7 +184,7 @@ const BusinessHome = () => {
         </div>
       </body>
 
-      <body className="flex flex-col-reverse md:flex-row px-[2em]  gap-[2em] my-[5em] justify-between items-center bg-white-10 m-auto max-w-[80em]">
+      <body className="flex flex-col-reverse md:flex-row px-[2em]  gap-[2em] my-[5em] justify-between items-center bg-white-10 m-auto max-w-[80em] lg:px-[10em]">
         <div className="md:w-1/2 space-y-5">
           <h1 className="h2 text-secondary-10">
             Seamless Dispute <br /> Resolutions
@@ -216,10 +225,10 @@ const BusinessHome = () => {
         </body>
       </div>
 
-      <body className="flex flex-col-reverse md:flex-row px-[2em]  my-[5em] justify-between items-center bg-white-10 m-auto max-w-[80em] ">
+      <body className="flex flex-col-reverse md:flex-row px-[2em]  my-[5em] justify-between items-center bg-white-10 m-auto max-w-[80em] lg:px-[10em]">
         <div className="md:w-1/2 space-y-5">
-          <h1 className="h2 text-secondary-10">
-            Position your business <br /> for growth
+          <h1 className="h2 text-secondary-10 text-center md:text-;left">
+            Position your business <br className="hidden md:block"/> for growth
           </h1>
           <p className="p2 text-white-30">
             Become the preferred choice, optimize service delivery with improved
@@ -236,7 +245,7 @@ const BusinessHome = () => {
         <h1 className="h2 text-secondary-10 text-center">
           PStay relaxed all day, every day with <br /> end-to-end automation
         </h1>
-        <body className="flex flex-col-reverse md:flex-row-reverse  px-[2em] justify-between items-center bg-white-10 gap-[2em] ">
+        <body className="flex flex-col-reverse md:flex-row-reverse  px-[2em] justify-between items-center bg-white-10 lg:px-[10em] gap-[2em] ">
           <div className="md:w-1/2 space-y-5">
             <p className="h4 text-white-30">
               Solve all your business problems with one smart integration to
@@ -282,11 +291,11 @@ const BusinessHome = () => {
       </div>
 
       <body
-        className=" bg-secondary-20  px-[2em] lg:px-[5em] py-[3em] md:pb-0 w-screen  "
+        className=" bg-secondary-20  px-[2em] lg:px-[10em] py-[3em] md:pb-0 w-screen  "
         style={{ backgroundImage: `url(${bgFrame})`, backgroundSize: "cover" }}
       >
-        <div className="max-w-[80em] m-auto flex flex-col-reverse md:flex-row justify-between">
-          <div className="md:w-1/2 space-y-5 pb-[3em] ">
+        <div className="max-w-[80em] m-auto flex flex-col-reverse md:flex-row justify-between items-center">
+          <div className="md:w-1/2 space-y-5 pb-[3em] md:pb-0">
             <h1 className="h2 text-secondary-10">
               We are always here for you{" "}
             </h1>
@@ -302,7 +311,7 @@ const BusinessHome = () => {
               Contact Us <IoIosArrowDropright />{" "}
             </Link>
           </div>
-          <div className="justify-end items-end grid">
+          <div className="justify-end items-end grid m-auto md:m-0">
             <img src={manSinging} alt="" />
           </div>
         </div>

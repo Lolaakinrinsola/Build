@@ -11,6 +11,7 @@ import ellipse from "../Assets/Images/Ellipse.png";
 import visum from "../Assets/Images/visum.png";
 import bgFrame from "../Assets/Images/Frame.png";
 import bgFrame2 from "../Assets/Images/BG-CTA(1).png";
+import bgFrame1 from "../Assets/Images/BGCTA.png";
 import Button from "../Components/Button";
 import Footer from "../Components/Footer";
 import logo from "../Assets/Images/Logo-2.png";
@@ -30,7 +31,7 @@ const AboutUs = () => {
         <header className=" flex flex-col justify-center  mt-[9em] md:space-y-5 text-white-10 px-[2em] max-w-[80em] lg:px-[5em] m-auto">
           <div className="flex flex-col gap-[5em] ">
             <div className="grid gap-[1em] ">
-              <h1 className="h1 text-left border-5">
+              <h1 className="text-[2em] text-[3.6em] text-bold text-left border-5">
               About Us
               </h1>
               <p className="p1 bg-gradient-to-r from-gradient-10 to-gradient-20 py-4 md:w-[75%] lg:w-[50%] px-3 rounded-xl bg-blur">
@@ -183,8 +184,8 @@ const AboutUs = () => {
         <body
           className="flex flex-col md:h-fit-content space-y-[5em] p-[2em] lg:p-[6em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] justify-between bg-secondary-10 items-center mt-[10em] "
           style={{
-            backgroundImage: `url(${bgFrame2})`,
-            backgroundSize: "contain",
+            backgroundImage: `url(${bgFrame1})`,
+            backgroundSize: "cover",
           }}
         >
           <div className="md:w-[60%] flex flex-col justify-center items-center m-auto">
@@ -228,12 +229,12 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div
-        className=" bg-secondary-20"
+      <body
+        className=" bg-secondary-20  px-[2em] lg:px-[10em] py-[3em] md:pb-0 w-screen  "
         style={{ backgroundImage: `url(${bgFrame})`, backgroundSize: "cover" }}
       >
-        <body className="flex flex-col-reverse md:flex-row px-[2em] lg:px-[5em] py-[3em] md:pb-0  max-w-[80em] m-auto justify-between w-screen ">
-          <div className="md:w-1/2 space-y-5 pb-[3em] ">
+        <div className="max-w-[80em] m-auto flex flex-col-reverse md:flex-row justify-between items-center">
+          <div className="md:w-1/2 space-y-5 pb-[3em] md:pb-0">
             <h1 className="h2 text-secondary-10">
               We are always here for you{" "}
             </h1>
@@ -249,11 +250,12 @@ const AboutUs = () => {
               Contact Us <IoIosArrowDropright />{" "}
             </Link>
           </div>
-          <div className="flex justify-end items-end">
+          <div className="justify-end items-end grid m-auto md:m-0">
             <img src={manSinging} alt="" />
           </div>
-        </body>
-      </div>
+        </div>
+      </body>
+
       <Footer />
     </div>
   );

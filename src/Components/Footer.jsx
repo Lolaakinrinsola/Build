@@ -105,7 +105,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-center md:text-left">
-          © 2023 Build bank. All rights reserved.
+          © 2023 TTMF bank. All rights reserved.
         </p>
       </div>
     </div>
