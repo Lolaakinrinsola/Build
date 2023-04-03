@@ -83,17 +83,17 @@ const Footer = () => {
         <div className="flex space-x-7 justify-center">
           <a
             href="#"
-            className="border border-secondary-10 flex rounded-lg p-3 items-center w-[160px] space-x-2"
+            className="border bg-secondary-10 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
-            <AiFillApple size="2em" />
+            <AiFillApple size="2em" color="white" />
             <p className="text-white-30">
               Get on the <br />{" "}
-              <span className="text-secondary-10">App Store</span>{" "}
+              <span className="text-white-10">App Store</span>{" "}
             </p>
           </a>
           <a
             href="#"
-            className="border border-primary-50 bg-primary-50 flex rounded-lg p-3 items-center w-[160px] space-x-2"
+            className="border border-primary-50 bg-primary-50 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
             <TbBrandGooglePlay color="white" size="2em" />
             <p className="text-white-10 ">

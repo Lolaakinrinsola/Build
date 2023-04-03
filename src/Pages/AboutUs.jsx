@@ -133,7 +133,7 @@ const AboutUs = () => {
 
       <div className="max-w-[80em] m-auto ">
         <body
-          className=" flex flex-col md:flex-row px-[2em] lg:px-[5em] md:h-fit-content py-[3em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] justify-between items-center bg-secondary-20 mt-[5em] "
+          className=" flex flex-col md:flex-row px-[2em] lg:px-[5em] md:h-fit-content py-[3em] md:rounded-[3em] md:mx-[2em] lg:mx-[5em] my-[2em] justify-between items-center bg-secondary-20 mt-[5em] "
           style={{
             backgroundImage: `url(${bgFrame})`,
             backgroundSize: "cover",
@@ -182,7 +182,7 @@ const AboutUs = () => {
 
       <div className="max-w-[80em] m-auto ">
         <body
-          className="flex flex-col md:h-fit-content space-y-[5em] p-[2em] lg:p-[6em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] justify-between bg-secondary-10 items-center mt-[10em] "
+          className="flex flex-col md:h-fit-content space-y-[5em] p-[2em] lg:p-[6em] md:rounded-[3em] md:mx-[2em] lg:mx-[5em] my-[2em] justify-between bg-secondary-10 items-center mt-[10em] "
           style={{
             backgroundImage: `url(${bgFrame1})`,
             backgroundSize: "cover",
@@ -204,19 +204,19 @@ const AboutUs = () => {
           Download Build mobile app
         </p>
         <div className="flex space-x-7 justify-center">
-          <a
+        <a
             href="#"
-            className="border border-secondary-10 flex rounded-lg p-3 items-center w-[160px] space-x-2"
+            className="border bg-secondary-10 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
-            <AiFillApple size="2em" />
+            <AiFillApple size="2em" color="white" />
             <p className="text-white-30">
               Get on the <br />{" "}
-              <span className="text-secondary-10">App Store</span>{" "}
+              <span className="text-white-10">App Store</span>{" "}
             </p>
           </a>
           <a
             href="#"
-            className="border border-primary-50 bg-primary-50 flex rounded-lg p-3 items-center w-[160px] space-x-2"
+            className="border border-primary-50 bg-primary-50 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
             <TbBrandGooglePlay color="white" size="2em" />
             <p className="text-white-10 ">

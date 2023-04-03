@@ -25,7 +25,7 @@ const Navbar = (props) => {
   return (
     <div className="">
       <div
-        className={`flex w-screen max-w-[80em] m-auto justify-between items-center py-5 md:pl-[5em] px-[2em] md:pr-[10em] + ${props.className}`}
+        className={`flex w-screen max-w-[100em] m-auto justify-between items-center py-5 md:pl-[5em] px-[2em] md:pr-[10em] + ${props.className}`}
       >
         <Link to="/" className="items-center">
           <img src={props.logo} alt="logo" />

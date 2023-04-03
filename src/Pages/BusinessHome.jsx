@@ -50,7 +50,7 @@ const BusinessHome = () => {
   return (
     <div className="font-sans">
      <div
-        className="h-screen "
+        className="min-h-[100vh]"
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
         <Navbar className="text-white-10" logo={logo} />
@@ -80,7 +80,7 @@ const BusinessHome = () => {
               </div>
             </div>
             <div className=" m-auto md:m-0">
-              <Button text="Create a Business Account" />
+              <Button text="Create a Business Account" className='mb-[2em]'/>
             </div>
           </div>
         </header>
@@ -92,20 +92,20 @@ const BusinessHome = () => {
           {" "}
           ️Grow your business with simple and efficient management tools. {" "}
         </p>
-        <div className="flex space-x-7 justify-center">
+        <div className="flex space-x-7 justify-center ">
           <a
             href="#"
-            className="border border-secondary-10 flex rounded-lg p-3 items-center w-[160px] space-x-2"
+            className="border border-secondary-10 flex rounded-2xl p-3 items-center w-[160px] space-x-2 bg-secondary-10"
           >
-            <AiFillApple size="2em" />
+            <AiFillApple size="2em" color="white" />
             <p className="text-white-30">
               Get on the <br />
-              <span className="text-secondary-10">App Store</span>
+              <span className="text-white-10">App Store</span>
             </p>
           </a>
           <a
             href="#"
-            className="border border-primary-50 bg-primary-50 flex rounded-lg p-3 items-center w-[160px] space-x-2"
+            className="border border-primary-50 bg-primary-50 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
             <TbBrandGooglePlay color="white" size="2em" />
             <p className="text-white-10">
@@ -149,14 +149,14 @@ const BusinessHome = () => {
       </div>
 
       <div
-        className="bg-secondary-20 max-w-[80em] m-auto rounded-[3em]"
+        className="bg-secondary-20  max-w-[80em] m-auto md:rounded-[3em]  md:mx-[2em] lg:mx-[5em] "
         style={{ backgroundImage: `url(${bgFrame})`, backgroundSize: "cover" }}
       >
-        <body className="flex flex-col md:flex-row px-[2em] lg:px-[5em] md:h-fit-content py-[3em]  mx-[2em] lg:mx-[5em] my-[2em] justify-between items-center  mt-[5em] ">
+        <body className="flex flex-col md:flex-row  lg:px-[5em] md:h-fit-content py-[3em] md:py-0 md:pt-[2em] mx-[2em] my-[2em] justify-between items-center  mt-[5em] ">
           <div>
             <img src={girl2} alt="" />
           </div>
-          <div className="md:w-1/2 space-y-5 grid justify-between items-top">
+          <div className="lg:w-1/2 space-y-5 grid justify-between items-top">
             <h1 className="h2 text-secondary-10">
               Get a POS in 48 hrs, hassle free
             </h1>
@@ -200,7 +200,7 @@ const BusinessHome = () => {
       </body>
 
       <div className="m-auto max-w-[80em] ">
-        <body className="flex flex-col md:flex-row px-[2em] lg:px-[5em] md:h-fit-content py-[3em] rounded-[3em] gap-[2em] mx-[2em] lg:mx-[5em] my-[2em] justify-between items-center bg-secondary-10 mt-[5em] ">
+        <body className="flex flex-col md:flex-row px-[2em] lg:px-[5em] md:h-fit-content py-[3em] md:rounded-[3em] gap-[2em] md:mx-[2em] lg:mx-[5em] my-[2em] justify-between items-center bg-secondary-10 mt-[5em] ">
           <div>
             <img src={girlHoldingPhone} alt="" />
           </div>
@@ -270,17 +270,17 @@ const BusinessHome = () => {
         <div className="flex space-x-7 justify-center">
           <a
             href="#"
-            className="border border-secondary-10 flex rounded-lg p-3 items-center w-[160px] space-x-2"
+            className="border bg-secondary-10 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
-            <AiFillApple size="2em" />
+            <AiFillApple size="2em" color="white"/>
             <p className="text-white-30">
               Get on the <br />{" "}
-              <span className="text-secondary-10">App Store</span>{" "}
+              <span className="text-white-10">App Store</span>{" "}
             </p>
           </a>
           <a
             href="#"
-            className="border border-primary-50 bg-primary-50 flex rounded-lg p-3 items-center w-[160px] space-x-2"
+            className="border border-primary-50 bg-primary-50 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
             <TbBrandGooglePlay color="white" size="2em" />
             <p className="text-white-30">

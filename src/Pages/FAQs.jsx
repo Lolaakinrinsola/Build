@@ -9,6 +9,7 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import Button from '../Components/Button';
 import bgFrame from '../Assets/Images/Frame.png'
 import bgFrame2 from '../Assets/Images/BG-CTA(1).png'
+import bgFrame1 from "../Assets/Images/BGCTA.png";
 import manSinging from '../Assets/Images/manSinging.png'
 import logo from '../Assets/Images/Logo.png'
 import { AiFillApple } from "react-icons/ai";
@@ -276,20 +277,24 @@ const FAQs = () => {
 
         </div>
 
-        <div className='max-w-[100em] m-auto '>
-            <body className='flex flex-col md:h-fit-content space-y-[5em] p-[2em] rounded-[3em] mx-[2em] lg:mx-[5em] my-[2em] justify-between bg-secondary-10 items-center mt-[10em] ' style={{backgroundImage: `url(${bgFrame2})`,backgroundSize:'contain'}} >
-                        <div className='md:w-[60%] flex flex-col justify-center items-center m-auto'>
-
-                            <h1 className='h2 text-center text-white-10'>Make the most of your dreams today</h1>
-                        </div>
-                        <div className=' grid justify-center'>
-
-                        <Button text='Get Started' />
-                        </div>
-                    
-                </body>
-
-        </div>
+        <div className="max-w-[80em] m-auto ">
+        <body
+          className="flex flex-col md:h-fit-content space-y-[5em] p-[2em] lg:p-[6em] md:rounded-[3em] md:mx-[2em] lg:mx-[5em] my-[2em] justify-between bg-secondary-10 items-center mt-[10em] "
+          style={{
+            backgroundImage: `url(${bgFrame1})`,
+            backgroundSize: "cover",
+          }}
+        >
+          <div className="md:w-[60%] flex flex-col justify-center items-center m-auto">
+            <h1 className="h2 text-center text-white-10">
+              Make the most of your dreams today
+            </h1>
+          </div>
+          <div className=" grid justify-center">
+            <Button text="Get Started" />
+          </div>
+        </body>
+      </div>
 
             <div className='bg-primary-10 py-[7em] w-screen space-y-5 mt-[7em] '>
                 <p className='p1 text-white-30 text-center'>Download Build mobile app</p>
