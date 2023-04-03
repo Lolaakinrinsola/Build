@@ -17,7 +17,7 @@ import Footer from "../Components/Footer";
 import logo from "../Assets/Images/Logo-2.png";
 import manSinging from "../Assets/Images/manSinging.png";
 import { AiFillApple } from "react-icons/ai";
-import { TbBrandGooglePlay } from "react-icons/tb";
+import { FaGooglePlay } from "react-icons/fa";
 import { IoIosArrowDropright } from "react-icons/io";
 
 const AboutUs = () => {
@@ -218,7 +218,7 @@ const AboutUs = () => {
             href="#"
             className="border border-primary-50 bg-primary-50 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
-            <TbBrandGooglePlay color="white" size="2em" />
+            <FaGooglePlay color="white" size="2em" />
             <p className="text-white-10 ">
               <span className="opacity-75">
                 Get on the <br />

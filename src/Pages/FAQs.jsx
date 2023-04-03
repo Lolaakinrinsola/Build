@@ -13,7 +13,7 @@ import bgFrame1 from "../Assets/Images/BGCTA.png";
 import manSinging from '../Assets/Images/manSinging.png'
 import logo from '../Assets/Images/Logo.png'
 import { AiFillApple } from "react-icons/ai";
-import { TbBrandGooglePlay } from "react-icons/tb";
+import { FaGooglePlay } from "react-icons/fa";
 import { IoIosArrowDropright } from "react-icons/io";
 import {
     Accordion,
@@ -304,7 +304,7 @@ const FAQs = () => {
                         <p className='text-white-30'>Get on the <br /> <span className='text-secondary-10'>App Store</span> </p>
                     </a>
                     <a href="#" className='border border-primary-50 bg-primary-50 flex rounded-lg p-3 items-center w-[160px] space-x-2'>
-                        <TbBrandGooglePlay color='white' size='2em' />
+                        <FaGooglePlay color='white' size='2em' />
                         <p className='text-white-30'>Get on the <br /> <span className='text-white-10'>App Store</span> </p>
                     </a>
                 </div>

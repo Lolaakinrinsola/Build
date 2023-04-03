@@ -9,7 +9,7 @@ import icon18 from "../Assets/Images/Icon-18.png";
 import "../Assets/styles/global.css";
 import store from "../Assets/Images/store-front2.png";
 import { AiFillApple } from "react-icons/ai";
-import { TbBrandGooglePlay } from "react-icons/tb";
+import { FaGooglePlay } from "react-icons/fa";
 import CardFlavor from "../Components/CardFlavor";
 import bgFrame from "../Assets/Images/Frame.png";
 import girl2 from "../Assets/Images/businessgirl.png";
@@ -107,7 +107,7 @@ const BusinessHome = () => {
             href="#"
             className="border border-primary-50 bg-primary-50 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
-            <TbBrandGooglePlay color="white" size="2em" />
+            <FaGooglePlay color="white" size="2em" />
             <p className="text-white-10">
               <span className="opacity-70">Get on the</span>
               <br /> <span className="text-white-10">App Store</span>{" "}
@@ -282,7 +282,7 @@ const BusinessHome = () => {
             href="#"
             className="border border-primary-50 bg-primary-50 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
-            <TbBrandGooglePlay color="white" size="2em" />
+            <FaGooglePlay color="white" size="2em" />
             <p className="text-white-30">
               Get on the <br /> <span className="text-white-10">App Store</span>{" "}
             </p>

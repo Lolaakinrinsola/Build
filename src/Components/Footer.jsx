@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import logo from "../Assets/Images/Logo.png";
 import { AiFillApple } from "react-icons/ai";
-import { TbBrandGooglePlay } from "react-icons/tb";
+import { FaGooglePlay } from "react-icons/fa";
 import "../Assets/styles/global.css";
 import { Link } from "react-router-dom";
 
@@ -95,7 +95,7 @@ const Footer = () => {
             href="#"
             className="border border-primary-50 bg-primary-50 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
-            <TbBrandGooglePlay color="white" size="2em" />
+            <FaGooglePlay color="white" size="2em" />
             <p className="text-white-10 ">
               <span className="opacity-75">
                 Get on the <br />

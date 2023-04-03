@@ -19,7 +19,7 @@ import {
 } from "react-scroll-motion";
 import Navbar from "./Navbar";
 import { AiFillApple } from "react-icons/ai";
-import { TbBrandGooglePlay } from "react-icons/tb";
+import { FaGooglePlay } from "react-icons/fa";
 import { IoIosArrowDropright } from "react-icons/io";
 import bg from "../Assets/Images/BG-2.png";
 import "../Assets/styles/global.css";
@@ -32,7 +32,7 @@ import buldingBlock from "../Assets/Images/buildingBlock.png";
 import girl from "../Assets/Images/girlSmiling.png";
 import girl2 from "../Assets/Images/girlWorking.png";
 import girl3 from "../Assets/Images/Img-visum.png";
-import message from "../Assets/Images/Group4.png";
+import message from "../Assets/Images/Payment_Image.png";
 import spacebg from "../Assets/Images/Spaceship.png";
 import yellowline from "../Assets/Images/yellowline.png";
 import bgCta from "../Assets/Images/BG-CTA.png";
@@ -315,7 +315,7 @@ Saving your earnings is an essential part of achieving your financial goals, whe
       </div>
 
       <body className="flex flex-col-reverse md:flex-row px-[2em] max-w-[80em] m-auto md:py-[5em] justify-between items-center bg-white-40 ">
-        <div className="md:w-4/5 lg:w-1/2 justify-center space-y-5 grid items-center">
+        <div className="md:w-4/5 lg:w-1/2 justify-center space-y-5 grid items-center m-auto">
           <p className="p3 text-white-30">Payments</p>
           <h1 className="h2 text-secondary-10">
             Funds transfer, bills payment with ease
@@ -327,7 +327,7 @@ Saving your earnings is an essential part of achieving your financial goals, whe
             and data, cable, utility & transport bills.
           </p>
         </div>
-        <div className="items-center justify-center grid">
+        <div className="items-center justify-center grid  m-auto">
           <img src={message} alt="" className="m-auto items-center justify-center" />
         </div>
       </body>
@@ -346,7 +346,7 @@ Saving your earnings is an essential part of achieving your financial goals, whe
         <img src={spacebg} alt=""  />
       </div>
 
-      <body className="flex flex-col-reverse md:flex-row-reverse px-[2em] md:py-[5em] justify-between items-center bg-white-40 gap-[2em] max-w-[80em] m-auto lg:px-[10em] ">
+      <body className="flex flex-col-reverse md:flex-row-reverse px-[2em] md:py-[2em] justify-between items-center bg-white-40 gap-[2em] max-w-[80em] m-auto lg:px-[10em] ">
         <div className="md:w-1/2 space-y-5">
           <h1 className="h2 text-secondary-10">Choose us for your business</h1>
           <p className="p2 text-white-30">
@@ -363,7 +363,7 @@ Saving your earnings is an essential part of achieving your financial goals, whe
 
       <div className="max-w-[80em] m-auto ">
         <body
-          className="flex flex-col md:h-fit-content space-y-[5em] p-[2em] lg:p-[6em] md:rounded-[3em] md:mx-[2em] lg:mx-[5em] my-[2em] justify-between bg-secondary-10 items-center mt-[10em] "
+          className="flex flex-col md:h-fit-content space-y-[5em] p-[2em] lg:p-[6em] md:rounded-[3em] md:mx-[2em] lg:mx-[5em] my-[2em] justify-between bg-secondary-10 items-center  "
           style={{
             backgroundImage: `url(${bgFrame1})`,
             backgroundSize: "cover",
@@ -400,7 +400,7 @@ Saving your earnings is an essential part of achieving your financial goals, whe
             href="#"
             className="border border-primary-50 bg-primary-50 flex rounded-2xl p-3 items-center w-[160px] space-x-2"
           >
-            <TbBrandGooglePlay color="white" size="2em" />
+            <FaGooglePlay color="white" size="2em" />
             <p className="text-white-10 ">
               <span className="opacity-75">
                 Get on the <br />
