@@ -373,7 +373,7 @@ Saving your earnings is an essential part of achieving your financial goals, whe
             <h1 className="h2 text-center text-white-10">
             A Bank after your own heart
             </h1>
-            <p className="text-white-30">Get started and create an account in minutes</p>
+            <p className="text-white-30 text-center">Get started and create an account in minutes</p>
           </div>
           <div className=" grid justify-center">
             <Button text="Get Started" />
