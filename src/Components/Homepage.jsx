@@ -49,6 +49,7 @@ import fire from "../Assets/Images/fire.png";
 import storeimage from "../Assets/Images/Store-image-download.png";
 import rocket from "../Assets/Images/Rocket.png";
 import Button from "./Button";
+import bgFrame1 from "../Assets/Images/BGCTA.png";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Typed from "react-typed";
@@ -360,18 +361,19 @@ Saving your earnings is an essential part of achieving your financial goals, whe
         </div>
       </body>
 
-      <div className="max-w-[80em] m-auto">
+      <div className="max-w-[80em] m-auto ">
         <body
-          className="flex flex-col md:h-fit-content space-y-[5em] lg:p-[6em] rounded-[3em] mx-[2em] p-[2em] md:mx-[5em] my-[2em] md:my-0 justify-between items-center "
+          className="flex flex-col md:h-fit-content space-y-[5em] p-[2em] lg:p-[6em] md:rounded-[3em] md:mx-[2em] lg:mx-[5em] my-[2em] justify-between bg-secondary-10 items-center mt-[10em] "
           style={{
-            backgroundImage: `url(${bgFrame2})`,
+            backgroundImage: `url(${bgFrame1})`,
             backgroundSize: "cover",
           }}
         >
-          <div className="md:w-[60%] flex flex-col justify-center items-center m-auto">
+          <div className="md:w-[60%] flex flex-col justify-center items-center m-auto gap-[2em]">
             <h1 className="h2 text-center text-white-10">
-              A Bank after your own heart, Build bank
+            A Bank after your own heart
             </h1>
+            <p className="text-white-30">Get started and create an account in minutes</p>
           </div>
           <div className=" grid justify-center">
             <Button text="Get Started" />
