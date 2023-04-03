@@ -122,7 +122,7 @@ const Homepage = () => {
         </header>
       </div>
 
-      <div className="flex flex-col-reverse md:flex-row max-w-[80em] m-auto px-[2em] lg:px-[5em] lg:h-screen mt-[2em] md:mt-0 justify-between items-center bg-white-40 ">
+      <div className="flex flex-col-reverse md:flex-row max-w-[80em] m-auto px-[2em] lg:px-[5em] lg:py-[5em] mt-[2em] md:mt-0 justify-between items-center bg-white-40 ">
         <div className="lg:w-1/2 md:w-2/3 space-y-5">
             <p className="p3 text-white-30 mt-[2em] mt-0">about build bank</p>
           <div>
