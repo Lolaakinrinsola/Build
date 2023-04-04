@@ -230,7 +230,7 @@ const BusinessHome = () => {
 
       <body className="flex flex-col-reverse md:flex-row px-[2em]  my-[5em] justify-between items-center bg-white-10 m-auto max-w-[80em] lg:px-[10em]">
         <div className="md:w-1/2 space-y-5">
-          <h1 className="h2 text-secondary-10 text-center md:text-;left">
+          <h1 className="h2 text-secondary-10 text-center md:text-left">
             Position your business <br className="hidden md:block" /> for growth
           </h1>
           <p className="p2 text-white-30">
@@ -248,7 +248,7 @@ const BusinessHome = () => {
         <h1 className="h2 text-secondary-10 text-center">
           PStay relaxed all day, every day with <br /> end-to-end automation
         </h1>
-        <body className="flex flex-col-reverse md:flex-row-reverse  px-[2em] justify-between items-center bg-white-10 lg:px-[10em] gap-[2em] ">
+        <body className="flex flex-col-reverse md:flex-row-reverse  px-[2em] justify-between items-center bg-white-10 lg:px-[10em] gap-[2em] mt-[2em]">
           <div className="md:w-1/2 space-y-5">
             <p className="h4 text-white-30">
               Solve all your business problems with one smart integration to
