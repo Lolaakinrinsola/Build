@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="flex flex-col justify-center">
-      <div className="grid justify-center  gap-[3em] lg:space-y-0 lg:grid-cols-4 md:grid-cols-2 py-[4em] px-[2em] lg:px-[10em] m-auto ">
+      <div className="grid justify-center  gap-[3em] lg:space-y-0 lg:grid-cols-4 grid-cols-2 py-[4em] px-[2em] lg:px-[10em] m-auto ">
         <div className="gap-[3em] ">
           <p className="text-secondary-10 p3">Company</p>
           <ul>

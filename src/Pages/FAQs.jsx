@@ -311,7 +311,7 @@ const FAQs = () => {
             </div>
             
             <div className='bg-secondary-20'style={{backgroundImage: `url(${bgFrame})`,backgroundSize:'cover'}}>
-                <body className='flex flex-col-reverse  md:flex-row px-[2em] max-w-[80em] m-auto py-[3em] md:pb-0 justify-between w-screen  ' >
+                <body className='flex flex-col  md:flex-row px-[2em] max-w-[80em] m-auto pt-[3em] md:p-0 items-center justify-between w-screen  ' >
 
                     <div className='md:w-1/2 space-y-5 pb-[2em] '>
                         <h1 className='h2 text-secondary-10'>We are always here for you </h1>

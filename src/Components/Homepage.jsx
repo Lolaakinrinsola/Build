@@ -48,6 +48,7 @@ import search from "../Assets/Images/Search.png";
 import fire from "../Assets/Images/fire.png";
 import storeimage from "../Assets/Images/Store-image-download.png";
 import rocket from "../Assets/Images/Rocket.png";
+import pos from "../Assets/Images/POS.png";
 import Button from "./Button";
 import bgFrame1 from "../Assets/Images/BGCTA.png";
 import { Link } from "react-router-dom";
@@ -125,19 +126,17 @@ const Homepage = () => {
 
       <div className="flex flex-col-reverse md:flex-row max-w-[80em] m-auto px-[2em] lg:px-[5em] lg:py-[5em] mt-[2em] md:mt-0 justify-between items-center bg-white-40 ">
         <div className="lg:w-1/2 md:w-2/3 space-y-5">
-            <p className="p3 text-white-30 mt-[2em] mt-0">about build bank</p>
+            <p className="p3 text-white-30 mt-[2em] mt-0">about Us</p>
           <div>
           <h1 className="h2 text-secondary-10">
-            A bank that build’s your dream
+          A bank that builds your business dreams 💛
           </h1>
             <div className="relative left-[20%] lg:left-0 top-[0] w-[30%]">
               <img src={yellowline} alt="" />
             </div>
           </div>
           <p className="p2 text-white-30">
-            We are designed to solve payment and retail management problems of
-            businesses and that’s exactly what happens when you choose TTMFB for
-            your business.
+          TTMFB is designed to solve payment and retail management problems for your businesses. 
           </p>
           <div className="space-y-2 p2 text-white-30 ">
             <div className="flex gap-1">
@@ -159,8 +158,8 @@ const Homepage = () => {
               <p>Increase business profit and revenue</p>
             </div>
             <div className="flex gap-1">
-              <div className="">
-                <img src={rocket} alt="" />
+              <div >
+                <img src={pos} alt="" className="w-[1.5em]"/>
               </div>
               <p>Empower your business with smart POS collections</p>
             </div>
@@ -211,7 +210,7 @@ const Homepage = () => {
         </div>
         <p className="text-center h3 text-white-30">
           {" "}
-          ️🛰️ We connect you to the future you desire . Don’t just imagine the
+          ️We connect you to the future you desire . Don’t just imagine the
           future you want, build it.
         </p>
         <div className="grid justify-center">
@@ -261,7 +260,7 @@ const Homepage = () => {
 
       <div className="max-w-[80em] m-auto ">
         <body
-          className="flex flex-col md:flex-row px-5 lg:px-[5em] md:h-fit-content  md:rounded-[3em] md:mx-[2em] lg:mx-[5em] my-[2em] md:my-0 justify-between items-center gap-[2em] bg-secondary-20 py-[3em] md:py-0"
+          className="flex flex-col-reverse md:flex-row px-5 lg:px-[5em] md:h-fit-content  md:rounded-[3em] md:mx-[2em] lg:mx-[5em] my-[2em] md:my-0 justify-between items-center gap-[2em] bg-secondary-20 pt-[3em] md:py-0"
           style={{ backgroundImage: `url(${ppt})`, backgroundSize: "cover" }}
         >
           <div className=" justify-end items-end">
@@ -298,7 +297,7 @@ Saving your earnings is an essential part of achieving your financial goals, whe
       </body>
 
       <div className="max-w-[80em] m-auto ">
-        <body className="flex flex-col md:flex-row px-5 lg:px-[5em] md:h-fit-content py-[5em] md:py-0 md:rounded-[3em] md:mx-[2em] lg:mx-[5em] my-[2em] md:my-0 justify-between items-center gap-[2em] bg-primary-200 ">
+        <body className="flex flex-col-reverse md:flex-row px-5 lg:px-[5em] md:h-fit-content pt-[5em] md:py-0 md:rounded-[3em] md:mx-[2em] lg:mx-[5em] my-[2em] md:my-0 justify-between items-center gap-[2em] bg-primary-200 ">
           <div>
             <img src={girl2} alt="" />
           </div>
@@ -335,7 +334,7 @@ Saving your earnings is an essential part of achieving your financial goals, whe
       <div className=" flex flex-col px-[2em] top-0  mt-[3em] md:mt-0 space-y-0 max-w-[80em] m-auto ">
         <p className="text-center p1 text-secondary-10 ">A Futuristic Bank</p>
         <div className="grid justify-center items-center m-auto  md:w-[60%] ">
-          <h2 className="text-center h3 text-white-30 grid justify-center">
+          <h2 className="text-center text-[1em] md:text-[2em] text-white-30 grid justify-center">
             We lead a forward thinking mindset geared at using technology to
             solve problems
           </h2>
@@ -412,10 +411,10 @@ Saving your earnings is an essential part of achieving your financial goals, whe
       </div>
 
       <body
-        className=" bg-secondary-20  px-[2em] lg:px-[10em] py-[3em] md:pb-0 w-screen  "
+        className=" bg-secondary-20  px-[2em] lg:px-[10em] pt-[3em] md:pb-0 w-screen  "
         style={{ backgroundImage: `url(${bgFrame})`, backgroundSize: "cover" }}
       >
-        <div className="max-w-[80em] m-auto flex flex-col-reverse md:flex-row justify-between items-center">
+        <div className="max-w-[80em] m-auto flex flex-col md:flex-row justify-between items-center">
           <div className="md:w-1/2 space-y-5 pb-[3em] md:pb-0">
             <h1 className="h2 text-secondary-10">
               We are always here for you{" "}
@@ -432,7 +431,7 @@ Saving your earnings is an essential part of achieving your financial goals, whe
               Contact Us <IoIosArrowDropright />{" "}
             </Link>
           </div>
-          <div className="justify-end items-end grid m-auto md:m-0">
+          <div className="justify-end items-end grid md:m-0">
             <img src={manSinging} alt="" />
           </div>
         </div>

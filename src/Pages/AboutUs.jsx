@@ -230,10 +230,10 @@ const AboutUs = () => {
       </div>
 
       <body
-        className=" bg-secondary-20  px-[2em] lg:px-[10em] py-[3em] md:pb-0 w-screen  "
+        className=" bg-secondary-20  px-[2em] lg:px-[10em] pt-[3em] md:pb-0 w-screen  "
         style={{ backgroundImage: `url(${bgFrame})`, backgroundSize: "cover" }}
       >
-        <div className="max-w-[80em] m-auto flex flex-col-reverse md:flex-row justify-between items-center">
+        <div className="max-w-[80em] m-auto flex flex-col md:flex-row justify-between items-center">
           <div className="md:w-1/2 space-y-5 pb-[3em] md:pb-0">
             <h1 className="h2 text-secondary-10">
               We are always here for you{" "}
