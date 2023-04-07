@@ -44,11 +44,11 @@ const Contact = () => {
 
         <div className='flex flex-col md:flex-row px-[2em] lg:px-[5em] md:space-x-[3em] mt-[5em] max-w-[80em] m-auto '>
             <div className='md:w-full md:h-fit-content space-y-[1em] m-auto md:m-0 py-[3em] px-[2em] md:px-[5em] md:pt-[7em] ' style={{backgroundImage: `url(${bg})`,backgroundSize:'cover'}}>
-                <p className='flex items-center'> <img src={icon6} alt="" /> 3LINE Card Management Limited </p>
+                <p className='flex items-center'> <img src={icon6} alt="" /> Total Trust Microfinance Bank </p>
                 <p className='flex items-center'><img src={icon7} alt="" className='flex'/>7A Idejo Street Victora Island, Lagos Nigeria </p>
                 <p className='flex items-center'><img src={icon3} alt="" />+234 1 7642825   |   +234 1 7642582 </p>
-                <p className='flex items-center'><img src={icon4} alt="" /> info@3lineng.com </p>
-                <p className='flex items-center'><img src={icon5} alt="" />www.3lineng.com</p>
+                <p className='flex items-center'><img src={icon4} alt="" /> info@ttmfb.com </p>
+                <p className='flex items-center'><img src={icon5} alt="" />www.ttmfb.com</p>
             </div>
             <div className='w-full mt:[2em] flex flex-col space-y-5'>
                 <div className='flex w-full flex-col md:flex-row mt-[3em] space-y-[1em] md:space-x-3 md:space-y-0'>
