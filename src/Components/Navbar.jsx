@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "../Assets/Images/Logo.png";
 import fb from "../Assets/Icons/facebook.png";
 import circle from "../Assets/Icons/circle.png";
 import linkedin from "../Assets/Icons/in.png";

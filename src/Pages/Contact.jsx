@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
 import '../Assets/styles/global.css'
 import Button from '../Components/Button';
@@ -12,7 +11,6 @@ import icon7 from '../Assets/Images/Icon-7.png'
 import bg from '../Assets/Images/Rectangle89.png'
 import logo from '../Assets/Images/Logo.png'
 import Footer from '../Components/Footer';
-import bgFrame2 from '../Assets/Images/BG-CTA(1).png'
 import bgFrame1 from "../Assets/Images/BGCTA.png";
 
 
@@ -47,7 +45,7 @@ const Contact = () => {
                 <p className='flex items-center'> <img src={icon6} alt="" /> Total Trust Microfinance Bank </p>
                 <p className='flex items-center'><img src={icon7} alt="" className='flex'/>7A Idejo Street Victora Island, Lagos Nigeria </p>
                 <p className='flex items-center'><img src={icon3} alt="" />+234 1 7642825   |   +234 1 7642582 </p>
-                <p className='flex items-center'><img src={icon4} alt="" /> info@ttmfb.com </p>
+                <p className='flex items-center'><img src={icon4} alt="" /> help@ttmfb.com </p>
                 <p className='flex items-center'><img src={icon5} alt="" />www.ttmfb.com</p>
             </div>
             <div className='w-full mt:[2em] flex flex-col space-y-5'>

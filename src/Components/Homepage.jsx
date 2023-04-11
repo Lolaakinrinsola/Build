@@ -1,33 +1,11 @@
-import React, { useEffect, useRef } from "react";
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  Fade,
-  FadeIn,
-  FadeOut,
-  Move,
-  MoveIn,
-  MoveOut,
-  Sticky,
-  StickyIn,
-  StickyOut,
-  Zoom,
-  ZoomIn,
-  ZoomOut,
-} from "react-scroll-motion";
+import React from "react";
 import Navbar from "./Navbar";
 import { AiFillApple } from "react-icons/ai";
 import { FaGooglePlay } from "react-icons/fa";
 import { IoIosArrowDropright } from "react-icons/io";
-import bg from "../Assets/Images/BG-2.png";
 import "../Assets/styles/global.css";
 import license from "../Assets/Images/Framelicense.png";
 import logo from "../Assets/Images/Logo-2.png";
-import front from "../Assets/Images/building1.png";
-import back from "../Assets/Images/building2.png";
-import store from "../Assets/Images/store-front.png";
 import buldingBlock from "../Assets/Images/buildingBlock.png";
 import girl from "../Assets/Images/girlSmiling.png";
 import girl2 from "../Assets/Images/girlWorking.png";
@@ -35,15 +13,11 @@ import girl3 from "../Assets/Images/Img-visum.png";
 import message from "../Assets/Images/Payment_Image.png";
 import spacebg from "../Assets/Images/Spaceship.png";
 import yellowline from "../Assets/Images/yellowline.png";
-import bgCta from "../Assets/Images/BG-CTA.png";
 import girlHoldingPhone from "../Assets/Images/girl2.png";
 import girlWithPos from "../Assets/Images/girl-with-POS.png";
-import front2 from "../Assets/Images/building3.png";
-import back2 from "../Assets/Images/building4.png";
 import manSinging from "../Assets/Images/manSinging.png";
 import bgFrame from "../Assets/Images/Frame.png";
 import ppt from "../Assets/Images/PPT.png";
-import bgFrame2 from "../Assets/Images/BGCTA.png";
 import search from "../Assets/Images/Search.png";
 import fire from "../Assets/Images/fire.png";
 import storeimage from "../Assets/Images/Store-image-download.png";
@@ -178,7 +152,7 @@ const Homepage = () => {
         <div className="px-[2em] max-w-[80em] m-auto lg:px-[10em] ">
           <div className="flex flex-col md:flex-row items-center gap-12 justify-between pb-[2.5em] ">
             <div className="flex gap-1 items-center">
-              <p className="h5">₦1B</p>
+              <p className="h5">  ₦2B</p>
               <p className=" h4 font-medium">
                 Collections <br /> Processed
               </p>
@@ -196,7 +170,7 @@ const Homepage = () => {
           </div>
           <div className="  m-auto">
             <p className="text-center h4">
-              N1B collections made for our businesses just in 4 months with 98%
+              Over N2B collections made for our businesses just in 6 months with 98%
               uptime. We make payment collections fast and easy while also
               ensuring security.
             </p>

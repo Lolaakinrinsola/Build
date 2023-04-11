@@ -7,7 +7,6 @@ import Button from "../Components/Button";
 import bg from "../Assets/Images/BG-4.png";
 import icon18 from "../Assets/Images/Icon-18.png";
 import "../Assets/styles/global.css";
-import store from "../Assets/Images/store-front2.png";
 import { AiFillApple } from "react-icons/ai";
 import { FaGooglePlay } from "react-icons/fa";
 import CardFlavor from "../Components/CardFlavor";
