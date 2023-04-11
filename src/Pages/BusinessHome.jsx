@@ -3,7 +3,7 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router-dom";
 import license from "../Assets/Images/Framelicense.png";
-import Button from "../Components/Button";
+import {LinksToPage } from "../Components/Button";
 import bg from "../Assets/Images/BG-4.png";
 import icon18 from "../Assets/Images/Icon-18.png";
 import "../Assets/styles/global.css";
@@ -77,7 +77,7 @@ const BusinessHome = () => {
               </div>
             </div>
             <div className=" m-auto md:m-0">
-              <Button text="Create a Business Account" className="mb-[2em]" />
+              <LinksToPage link='/comingSoon' text="Create a Business Account" className="mb-[2em]" />
             </div>
           </div>
         </header>
@@ -221,7 +221,7 @@ const BusinessHome = () => {
               </li>
             </ul>
             <div>
-              <Button text="Get Started" />
+              <LinksToPage link='/comingSoon' text="Get Started" />
             </div>
           </div>
         </body>
@@ -261,7 +261,7 @@ const BusinessHome = () => {
           </div>
         </body>
         <div className="grid justify-center mt-[2em]">
-          <Button text="Create business Account" />
+          <LinksToPage link='/comingSoon' text="Create business Account" />
         </div>
       </div>
 

@@ -1,11 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Button = (props) => {
+export const Button = (props) => {
   return (
     <button className={(`bg-primary-50 text-white-10 px-7 py-4 rounded-lg hover:bg-secondary-10 + ${props.className}`)}>
     {props.text}
     </button>
   )
 }
-
-export default Button
+export const LinksToPage = (props) => {
+  return (
+    <Link to={props.link} className={(`bg-primary-50 text-white-10 px-7 py-4 rounded-lg hover:bg-secondary-10 + ${props.className}`)}>
+    {props.text}
+    </Link>
+  )
+}

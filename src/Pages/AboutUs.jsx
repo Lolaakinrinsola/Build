@@ -12,7 +12,7 @@ import visum from "../Assets/Images/visum.png";
 import bgFrame from "../Assets/Images/Frame.png";
 import bgFrame2 from "../Assets/Images/BG-CTA(1).png";
 import bgFrame1 from "../Assets/Images/BGCTA.png";
-import Button from "../Components/Button";
+import {LinksToPage } from "../Components/Button";
 import Footer from "../Components/Footer";
 import logo from "../Assets/Images/Logo-2.png";
 import manSinging from "../Assets/Images/manSinging.png";
@@ -40,7 +40,7 @@ const AboutUs = () => {
               <div></div>
             </div>
             <div>
-              <Button text="Get Started" />
+              <LinksToPage link='/comingSoon' text="Get Started" />
             </div>
           </div>
         </header>
@@ -176,7 +176,7 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="grid justify-center">
-          <Button text="Create business Account" />
+          <LinksToPage link='/comingSoon' text="Create business Account" />
         </div>
       </div>
 
@@ -194,7 +194,7 @@ const AboutUs = () => {
             </h1>
           </div>
           <div className=" grid justify-center">
-            <Button text="Get Started" />
+            <LinksToPage link='/comingSoon' text="Get Started" />
           </div>
         </body>
       </div>

@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from '../Components/Navbar';
 import '../Assets/styles/global.css'
-import Button from '../Components/Button';
+import {LinksToPage } from '../Components/Button';
+import {Button } from '../Components/Button';
 import mail from '../Assets/Images/Mail.png'
 import icon3 from '../Assets/Images/Icon-3.png'
 import icon4 from '../Assets/Images/Icon-4.png'
@@ -77,7 +78,7 @@ const Contact = () => {
             </h1>
           </div>
           <div className=" grid justify-center">
-            <Button text="Get Started" />
+            <LinksToPage link='/comingSoon' text="Get Started" />
           </div>
         </body>
       </div>

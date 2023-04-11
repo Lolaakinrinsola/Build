@@ -7,6 +7,7 @@ import FAQs from "./Pages/FAQs";
 import Contact from "./Pages/Contact";
 import Stories from "./Pages/Stories";
 import Blog from "./Pages/Blog";
+import ComingSoon from "./Pages/ComingSoon";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}  />
           <Route path='/stories' element={<Stories/>}  />
           <Route path='/blog' element={<Blog/>}  />
+          <Route path='/comingSoon' element={<ComingSoon/>}  />
         </Routes>
       </Router>
       

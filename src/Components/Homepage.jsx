@@ -23,7 +23,7 @@ import fire from "../Assets/Images/fire.png";
 import storeimage from "../Assets/Images/Store-image-download.png";
 import rocket from "../Assets/Images/Rocket.png";
 import pos from "../Assets/Images/POS.png";
-import Button from "./Button";
+import {LinksToPage } from "./Button";
 import bgFrame1 from "../Assets/Images/BGCTA.png";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
@@ -92,7 +92,7 @@ const Homepage = () => {
               </div>
             </div>
             <div className=" m-auto md:m-0 ">
-              <Button text="Get Started" className='mb-[2em]' />
+              <LinksToPage link='/comingSoon' text="Get Started" className='mb-[2em]' />
             </div>
           </div>
         </header>
@@ -188,7 +188,7 @@ const Homepage = () => {
           future you want, build it.
         </p>
         <div className="grid justify-center">
-          <Button text="Create an Account" />
+          <LinksToPage link='/comingSoon' text="Create an Account" />
         </div>
       </div>
 
@@ -225,7 +225,7 @@ const Homepage = () => {
             with tools designed to take worry off your business
           </p>
 
-          <Button text="Explore Visum" className="!bg-primary-200" />
+          <LinksToPage link='/comingSoon' text="Explore Visum" className="!bg-primary-200" />
         </div>
         <div>
           <img src={girl3} alt="" />
@@ -248,7 +248,7 @@ const Homepage = () => {
               Request and get you POS delivered to you by our team....
             </p>
             <div>
-              <Button text="Start Journey" className="!bg-primary-200" />
+              <LinksToPage link='/comingSoon' text="Start Journey" className="!bg-primary-200" />
             </div>
           </div>
         </body>
@@ -263,7 +263,7 @@ const Homepage = () => {
 Saving your earnings is an essential part of achieving your financial goals, whether it's paying off debt, building an emergency fund, or saving for a big purchase, we got it all covered
           </p>
 
-          <Button text="Open an account" />
+          <LinksToPage link='/comingSoon' text="Open an account" />
         </div>
         <div>
           <img src={girl} alt="" />
@@ -327,7 +327,7 @@ Saving your earnings is an essential part of achieving your financial goals, whe
             needs and solve realistic problems for you.
           </p>
 
-          <Button text=" Create business Account" />
+          <LinksToPage link='/comingSoon' text=" Create business Account" />
         </div>
         <div>
           <img src={girlHoldingPhone} alt="" />
@@ -349,7 +349,7 @@ Saving your earnings is an essential part of achieving your financial goals, whe
             <p className="text-white-30 text-center">Get started and create an account in minutes</p>
           </div>
           <div className=" grid justify-center">
-            <Button text="Get Started" />
+            <LinksToPage link='/comingSoon' text="Get Started" />
           </div>
         </body>
       </div>

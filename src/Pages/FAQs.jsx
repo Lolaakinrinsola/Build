@@ -6,9 +6,9 @@ import '../Assets/styles/global.css'
 import { CiSearch } from "react-icons/ci";
 import { IoIosArrowDropup } from "react-icons/io";
 import { IoIosArrowDropdown } from "react-icons/io";
-import Button from '../Components/Button';
+import {LinksToPage } from '../Components/Button';
+import {Button } from '../Components/Button';
 import bgFrame from '../Assets/Images/Frame.png'
-import bgFrame2 from '../Assets/Images/BG-CTA(1).png'
 import bgFrame1 from "../Assets/Images/BGCTA.png";
 import manSinging from '../Assets/Images/manSinging.png'
 import logo from '../Assets/Images/Logo.png'
@@ -291,7 +291,7 @@ const FAQs = () => {
             </h1>
           </div>
           <div className=" grid justify-center">
-            <Button text="Get Started" />
+            <LinksToPage link='/comingSoon' text="Get Started" />
           </div>
         </body>
       </div>

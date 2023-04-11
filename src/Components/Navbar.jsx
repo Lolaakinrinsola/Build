@@ -7,7 +7,7 @@ import "../Assets/styles/global.css";
 import ig from "../Assets/Icons/instagram.png";
 import twitter from "../Assets/Icons/Twitter.png";
 import { Link } from "react-router-dom";
-import Button from "./Button";
+import {LinksToPage} from "./Button";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import {
@@ -91,7 +91,7 @@ const Navbar = (props) => {
           </div>
         ) : null}
 
-        <Button text="Get started" className="hidden md:block" />
+        <LinksToPage link='/comingSoon'link='/comingSoon' text="Get started" className="hidden md:block" />
       </div>
       <div className="hidden md:block absolute top-[0%] right-[0%] py-7 pr-[5em] justify-center items-center max-w-[80em] m-auto ">
         <div className=" flex flex-col items-center space-y-4">
