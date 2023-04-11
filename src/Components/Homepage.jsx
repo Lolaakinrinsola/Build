@@ -320,14 +320,13 @@ Saving your earnings is an essential part of achieving your financial goals, whe
       </div>
 
       <body className="flex flex-col-reverse md:flex-row-reverse px-[2em] md:py-[2em] justify-between items-center bg-white-40 gap-[2em] max-w-[80em] m-auto lg:px-[10em] ">
-        <div className="md:w-1/2 space-y-5">
+        <div className="md:w-1/2 space-y-[2em]">
           <h1 className="h2 text-secondary-10">Choose us for your business</h1>
           <p className="p2 text-white-30">
             We build user-centric solutions that caters for your actual business
             needs and solve realistic problems for you.
           </p>
-
-          <LinksToPage link='/comingSoon' text=" Create business Account" />
+          <LinksToPage link='/comingSoon' text=" Create business Account" className='mb-[3em]'/>
         </div>
         <div>
           <img src={girlHoldingPhone} alt="" />
