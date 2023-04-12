@@ -11,7 +11,7 @@ import icon2 from '../Assets/Images/Icon2.png'
 const ComingSoon = () => {
   return (
     <div>
-      <div className="bg-secondary-10 lg:h-screen text-white-10">
+      <div className="bg-secondary-10 min-h-[100vh] text-white-10">
         <Navbar className="text-white-10" logo={logo} />
 
         <div className="max-w-[80em] py-[2em] px-[2em] md:px-[5em] md:py-[5em] flex flex-col-reverse lg:flex-row justify-between m-auto">
@@ -39,14 +39,14 @@ const ComingSoon = () => {
             </div>
 
 
-            <div className="flex items-center justify-between mt-[2em] ">
-                <div className="flex items-center space-x-2 md:space-x-5">
+            <div className="flex items-center justify-between mt-[2em] text-center md:text-left">
+                <div className="flex flex-col md:flex-row items-center  space-y-2 md:space-y-0 md:space-x-5">
                     <img src={icon1} alt="" className="" />
-                    <p>98% Uptime <br /> in 4 months</p>
+                    <p >98% Uptime <br /> in 6 months</p>
                 </div>
-                <div className="flex items-center space-x-2  md:space-x-5">
+                <div className="flex flex-col md:flex-row  items-center space-y-2 md:space-y-0 md:space-x-5">
                 <img src={icon2} alt="" />
-                <p>2bn naira <br /> processed already</p>
+                <p >2bn naira <br/> processed already</p>
                 </div>
             </div>
           </div>

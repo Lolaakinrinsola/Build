@@ -92,7 +92,7 @@ const Homepage = () => {
               </div>
             </div>
             <div className=" m-auto md:m-0 ">
-              <LinksToPage link='/comingSoon' text="Get Started" className='mb-[2em]' />
+              <LinksToPage divClassName='block' link='/comingSoon' text="Get Started" className='mb-[2em]' />
             </div>
           </div>
         </header>

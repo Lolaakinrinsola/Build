@@ -91,7 +91,7 @@ const Navbar = (props) => {
           </div>
         ) : null}
 
-        <LinksToPage link='/comingSoon'link='/comingSoon' text="Get started" className="hidden md:block" />
+        <LinksToPage link='/comingSoon' text="Get started" divClassName="hidden md:flex" />
       </div>
       <div className="hidden md:block absolute top-[0%] right-[0%] py-7 pr-[5em] justify-center items-center max-w-[80em] m-auto ">
         <div className=" flex flex-col items-center space-y-4">
