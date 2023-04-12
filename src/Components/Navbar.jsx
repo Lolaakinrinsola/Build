@@ -59,6 +59,10 @@ const Navbar = (props) => {
         />
 
         {open ? (
+          <div>
+
+          <div className="absolute h-screen w-screen top-0 left-0 bg-[#000000] bg-opacity-[60%]" onClick={()=> setOpen(!open)}>
+          </div>
           <div className=" pb-[2em] w-2/3 bg-white-10 absolute top-0 right-0 rounded-2xl">
             <div className="mt-[2em] grid justify-end items-end mr-[2em] ">
               <AiOutlineClose
@@ -88,6 +92,8 @@ const Navbar = (props) => {
                 </a>
               </div>
             </div>
+          </div>
+
           </div>
         ) : null}
 
